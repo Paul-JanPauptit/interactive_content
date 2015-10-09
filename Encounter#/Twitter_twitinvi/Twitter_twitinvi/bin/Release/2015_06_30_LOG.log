@@ -1,0 +1,33 @@
+<logEntry>
+  <Date>30/06/2015 01:07:18</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 35
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 55
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 134
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 61</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>30/06/2015 01:07:49</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 35
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 55
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 134
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 61</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>30/06/2015 01:08:05</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 35
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 55
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 134
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 61</Stack>
+  </Exception>
+</logEntry>

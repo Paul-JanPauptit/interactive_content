@@ -1,0 +1,68 @@
+<logEntry>
+  <Date>24/06/2015 00:24:03</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 32
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 51
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 138
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>24/06/2015 00:24:10</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 32
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 51
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 138
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>24/06/2015 00:24:19</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 32
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 51
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 138
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>24/06/2015 10:59:14</Date>
+  <Exception>
+    <Source>mscorlib</Source>
+    <Message>The process cannot access the file 'C:\Users\nikhil\Desktop\MediaLabs\FINALITY\Landmarks_Categories.xlsx' because it is being used by another process.</Message>
+    <Stack>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 93
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>24/06/2015 11:57:59</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 32
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 51
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 137
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>
+<logEntry>
+  <Date>24/06/2015 11:58:14</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <Stack>   at Sensors.WeatherSense.pick_weather_type_from_twitter_stream(String[] weather_types) in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 32
+   at Sensors.WeatherSense.SunnyOrCloudy() in c:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\Sensors.cs:line 51
+   at Twitter_twitinvi.Program.RunTwitterApplication() in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 137
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>

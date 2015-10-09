@@ -1,0 +1,95 @@
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Controllers.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Core.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Credentials.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Factories.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Logic.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Security.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Streams.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.WebLogic.dll
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.xml
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.exe
+c:\users\administrator\documents\visual studio 2012\Projects\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.pdb
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe.config
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.exe
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.pdb
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.pdb
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Controllers.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Core.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Credentials.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Factories.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Logic.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Security.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Streams.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.WebLogic.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Excel.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Excel.pdb
+C:\Users\Administrator\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.csproj.ResolveComReference.cache
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe.config
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.csproj.ResolveComReference.cache
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.exe
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.pdb
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.pdb
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Excel.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Controllers.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Core.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Credentials.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Factories.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Logic.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Security.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.Streams.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Tweetinvi.WebLogic.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Autofac.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Excel.pdb
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Debug\Twitter_twitinvi.csprojResolveAssemblyReference.cache

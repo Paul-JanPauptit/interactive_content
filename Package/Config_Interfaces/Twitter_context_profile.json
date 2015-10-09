@@ -1,0 +1,15 @@
+{
+    
+    'consumer_key': 'kXS6JnHdVPy7QURtYBM6dq939',
+    'consumer_secret': 'EmvFLNbNdINlm7UfqEVIRoZp7l19dx0zTBk3wMaaeSQjHo0qoF',
+    'access_token' : '116446279-KRj0CA7w0J3q9ewdF6gtrRRdjPVW1SGwvQ2UwABD',
+    'access_token_secret': 'Q69c4rZoz14msESV2DC01a0Lzz2jjjtlHzuFqUwl8jk5b',
+
+    'track_keywords' : '#YOLO, #love, #life',
+    'location_topleft' : '52.366914, 4.925413',
+    'location_bottomright' : '52.366730, 4.926695',	
+
+  
+}
+
+

@@ -1,0 +1,19 @@
+﻿Build started 22/06/2015 16:20:09.
+     1>Project "C:\Users\nikhil\Desktop\MediaLabs\FINALITY\ParsingXML\ParsingXML\ParsingXML.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\nikhil\Desktop\of_v0.8.4_vs_release\apps\myApps\OpenEncounters\src /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/ParsingXML.pch" /Fo".\Debug/" /Fd".\Debug/vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt ParsingXML.cpp
+         ParsingXML.cpp
+     1>c:\users\nikhil\desktop\medialabs\finality\parsingxml\parsingxml\parsingxml.cpp(35): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(288) : see declaration of 'wcscpy'
+     1>c:\users\nikhil\desktop\medialabs\finality\parsingxml\parsingxml\parsingxml.cpp(217): warning C4715: 'GetData' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug/ParsingXML.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Windows\System32 /LIBPATH:C:\Users\nikhil\Desktop\MediaLabs\FINALITY\ParsingXML\ParsingXML kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug/ParsingXML.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\Debug\ParsingXML.lib" /MACHINE:X86 /SAFESEH .\Debug/ParsingXML.obj
+         .\Debug/StdAfx.obj
+         ParsingXML.vcxproj -> C:\Users\nikhil\Desktop\MediaLabs\FINALITY\ParsingXML\ParsingXML\.\Debug\ParsingXML.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o".\Debug/ParsingXML.bsc" .\Debug\ParsingXML.sbr .\Debug\StdAfx.sbr
+     1>Done Building Project "C:\Users\nikhil\Desktop\MediaLabs\FINALITY\ParsingXML\ParsingXML\ParsingXML.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.52

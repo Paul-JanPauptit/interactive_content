@@ -1,0 +1,9 @@
+<logEntry>
+  <Date>23/06/2015 20:08:08</Date>
+  <Exception>
+    <Source>Twitter_twitinvi</Source>
+    <Message>Could not load file or assembly 'Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The system cannot find the file specified.</Message>
+    <Stack>   at Twitter_twitinvi.Program.RunTwitterApplication()
+   at Twitter_twitinvi.Program.Main(String[] args) in c:\Users\nikhil\Desktop\MediaLabs\Backup\BackupTwitter\Program.cs:line 64</Stack>
+  </Exception>
+</logEntry>

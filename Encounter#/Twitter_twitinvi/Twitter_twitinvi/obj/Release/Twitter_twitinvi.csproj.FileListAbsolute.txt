@@ -1,0 +1,78 @@
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe.config
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe.manifest
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.application
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.pdb
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Autofac.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Excel.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Newtonsoft.Json.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Controllers.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Core.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Credentials.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Factories.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Logic.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Security.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Streams.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.WebLogic.dll
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Autofac.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Excel.pdb
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Newtonsoft.Json.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.csprojResolveAssemblyReference.cache
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.csproj.ResolveComReference.cache
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.exe.manifest
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.application
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.exe
+C:\Users\nikhil\Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.pdb
+G:\NEW Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe.config
+G:\NEW Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.csproj.ResolveComReference.cache
+G:\NEW Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.exe
+G:\NEW Desktop\MediaLabs\Backup\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.pdb
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe.config
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.csproj.ResolveComReference.cache
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.exe
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.pdb
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe.manifest
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.application
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.exe
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Twitter_twitinvi.pdb
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Autofac.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Excel.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Newtonsoft.Json.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Controllers.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Core.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Credentials.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Factories.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Logic.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Security.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.Streams.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Tweetinvi.WebLogic.dll
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Autofac.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Excel.pdb
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\Newtonsoft.Json.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.csprojResolveAssemblyReference.cache
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.exe.manifest
+C:\Users\nikhilbanerjee\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\Twitter_twitinvi\obj\Release\Twitter_twitinvi.application

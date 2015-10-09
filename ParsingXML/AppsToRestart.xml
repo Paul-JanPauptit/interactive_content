@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parent Depth="0"><Child1 Depth="1">This is a child of Parent</Child1><Child2 Depth="1"><Child3 Depth="2"><Child4 Depth="3">This is a child of Child3</Child4></Child3></Child2></Parent>

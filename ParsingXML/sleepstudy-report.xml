@@ -1,0 +1,2992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SleepStudy xmlns="http://schemas.microsoft.com/sleepstudy/2012">
+  <ReportInformation>
+    <ReportGuid>58ddf1e5-2937-46a4-92ae-7a7c14868f5e</ReportGuid>
+    <ReportVersion>1.1</ReportVersion>
+    <ScanTime>2015-05-13T03:33:26Z</ScanTime>
+    <LocalScanTime>2015-05-12T20:33:26</LocalScanTime>
+    <ReportStartTime>2015-05-10T03:33:24Z</ReportStartTime>
+    <LocalReportStartTime>2015-05-09T20:33:24</LocalReportStartTime>
+    <ReportDuration>3</ReportDuration>
+    <SingleTraceFile>false</SingleTraceFile>    <UtcOffset>-7:00</UtcOffset>
+  </ReportInformation>
+  <SystemInformation>
+    <ComputerName>CONTOSOTABLET1</ComputerName>
+    <SystemManufacturer>ASUSTeK COMPUTER INC.</SystemManufacturer>
+    <SystemProductName>T100TA</SystemProductName>
+    <BIOSDate>03/14/2014</BIOSDate>
+    <BIOSVersion>T100TA.304</BIOSVersion>
+    <OSBuild>10074.1.x86fre.fbl_impressive_cxe.150425-1755</OSBuild>
+    <PlatformRole>Slate</PlatformRole>
+    <ConnectedStandby>1</ConnectedStandby>
+  </SystemInformation>
+  <Warnings>
+    <Warning Header="Note: This report does not contain information for the first Connected Standby session." Body="The first Connected Standby session started in an earlier time frame. If interested in the earlier time frame, use &lt;code&gt;powercfg sleepstudy -duration DURATION&lt;/code&gt;. For example, to analyze the past 10 days:&lt;br /&gt;&lt;pre&gt;powercfg sleepstudy -duration 10&lt;/pre&gt;"></Warning>
+  </Warnings>
+  <EnergyDrains>
+    <Drain
+      StartTimestamp="2015-05-10T03:37:48Z"
+      LocalStartTimestamp="2015-05-09T20:37:48"
+      EndTimestamp="2015-05-10T04:07:48Z"
+      LocalEndTimestamp="2015-05-09T21:07:48"
+      StartChargeCapacity="18206"
+      StartFullChargeCapacity="31170"
+      EndChargeCapacity="21424"
+      EndFullChargeCapacity="30908"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:07:48Z"
+      LocalStartTimestamp="2015-05-09T21:07:48"
+      EndTimestamp="2015-05-10T04:22:51Z"
+      LocalEndTimestamp="2015-05-09T21:22:51"
+      StartChargeCapacity="21424"
+      StartFullChargeCapacity="30908"
+      EndChargeCapacity="23003"
+      EndFullChargeCapacity="30765"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:22:51Z"
+      LocalStartTimestamp="2015-05-09T21:22:51"
+      EndTimestamp="2015-05-10T04:22:51Z"
+      LocalEndTimestamp="2015-05-09T21:22:51"
+      StartChargeCapacity="23003"
+      StartFullChargeCapacity="30765"
+      EndChargeCapacity="23003"
+      EndFullChargeCapacity="30765"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:22:51Z"
+      LocalStartTimestamp="2015-05-09T21:22:51"
+      EndTimestamp="2015-05-10T04:24:12Z"
+      LocalEndTimestamp="2015-05-09T21:24:12"
+      StartChargeCapacity="23003"
+      StartFullChargeCapacity="30765"
+      EndChargeCapacity="23089"
+      EndFullChargeCapacity="30765"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:24:12Z"
+      LocalStartTimestamp="2015-05-09T21:24:12"
+      EndTimestamp="2015-05-10T04:24:16Z"
+      LocalEndTimestamp="2015-05-09T21:24:16"
+      StartChargeCapacity="23089"
+      StartFullChargeCapacity="30765"
+      EndChargeCapacity="23094"
+      EndFullChargeCapacity="30743"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:24:16Z"
+      LocalStartTimestamp="2015-05-09T21:24:16"
+      EndTimestamp="2015-05-10T04:25:59Z"
+      LocalEndTimestamp="2015-05-09T21:25:59"
+      StartChargeCapacity="23094"
+      StartFullChargeCapacity="30765"
+      EndChargeCapacity="23250"
+      EndFullChargeCapacity="30743"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:25:59Z"
+      LocalStartTimestamp="2015-05-09T21:25:59"
+      EndTimestamp="2015-05-10T04:29:59Z"
+      LocalEndTimestamp="2015-05-09T21:29:59"
+      StartChargeCapacity="23250"
+      StartFullChargeCapacity="30743"
+      EndChargeCapacity="23606"
+      EndFullChargeCapacity="30716"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:29:59Z"
+      LocalStartTimestamp="2015-05-09T21:29:59"
+      EndTimestamp="2015-05-10T04:32:59Z"
+      LocalEndTimestamp="2015-05-09T21:32:59"
+      StartChargeCapacity="23606"
+      StartFullChargeCapacity="30716"
+      EndChargeCapacity="23891"
+      EndFullChargeCapacity="30694"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:32:59Z"
+      LocalStartTimestamp="2015-05-09T21:32:59"
+      EndTimestamp="2015-05-10T04:37:45Z"
+      LocalEndTimestamp="2015-05-09T21:37:45"
+      StartChargeCapacity="23891"
+      StartFullChargeCapacity="30694"
+      EndChargeCapacity="24379"
+      EndFullChargeCapacity="30671"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T04:37:45Z"
+      LocalStartTimestamp="2015-05-09T21:37:45"
+      EndTimestamp="2015-05-10T05:07:45Z"
+      LocalEndTimestamp="2015-05-09T22:07:45"
+      StartChargeCapacity="24379"
+      StartFullChargeCapacity="30671"
+      EndChargeCapacity="27371"
+      EndFullChargeCapacity="30416"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T05:07:45Z"
+      LocalStartTimestamp="2015-05-09T22:07:45"
+      EndTimestamp="2015-05-10T05:11:19Z"
+      LocalEndTimestamp="2015-05-09T22:11:19"
+      StartChargeCapacity="27371"
+      StartFullChargeCapacity="30416"
+      EndChargeCapacity="27664"
+      EndFullChargeCapacity="30394"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T05:11:19Z"
+      LocalStartTimestamp="2015-05-09T22:11:19"
+      EndTimestamp="2015-05-10T05:22:45Z"
+      LocalEndTimestamp="2015-05-09T22:22:45"
+      StartChargeCapacity="27664"
+      StartFullChargeCapacity="30394"
+      EndChargeCapacity="28459"
+      EndFullChargeCapacity="30323"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T05:22:45Z"
+      LocalStartTimestamp="2015-05-09T22:22:45"
+      EndTimestamp="2015-05-10T05:37:45Z"
+      LocalEndTimestamp="2015-05-09T22:37:45"
+      StartChargeCapacity="28459"
+      StartFullChargeCapacity="30323"
+      EndChargeCapacity="29235"
+      EndFullChargeCapacity="30255"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T05:37:45Z"
+      LocalStartTimestamp="2015-05-09T22:37:45"
+      EndTimestamp="2015-05-10T05:52:45Z"
+      LocalEndTimestamp="2015-05-09T22:52:45"
+      StartChargeCapacity="29235"
+      StartFullChargeCapacity="30255"
+      EndChargeCapacity="29794"
+      EndFullChargeCapacity="30210"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T05:52:45Z"
+      LocalStartTimestamp="2015-05-09T22:52:45"
+      EndTimestamp="2015-05-10T06:07:46Z"
+      LocalEndTimestamp="2015-05-09T23:07:46"
+      StartChargeCapacity="29794"
+      StartFullChargeCapacity="30210"
+      EndChargeCapacity="30203"
+      EndFullChargeCapacity="30188"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T06:07:46Z"
+      LocalStartTimestamp="2015-05-09T23:07:46"
+      EndTimestamp="2015-05-10T06:22:45Z"
+      LocalEndTimestamp="2015-05-09T23:22:45"
+      StartChargeCapacity="30203"
+      StartFullChargeCapacity="30188"
+      EndChargeCapacity="30315"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T06:22:45Z"
+      LocalStartTimestamp="2015-05-09T23:22:45"
+      EndTimestamp="2015-05-10T06:37:46Z"
+      LocalEndTimestamp="2015-05-09T23:37:46"
+      StartChargeCapacity="30315"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30319"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T06:37:46Z"
+      LocalStartTimestamp="2015-05-09T23:37:46"
+      EndTimestamp="2015-05-10T08:37:46Z"
+      LocalEndTimestamp="2015-05-10T01:37:46"
+      StartChargeCapacity="30319"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30338"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T08:37:46Z"
+      LocalStartTimestamp="2015-05-10T01:37:46"
+      EndTimestamp="2015-05-10T08:48:48Z"
+      LocalEndTimestamp="2015-05-10T01:48:48"
+      StartChargeCapacity="30338"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30341"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T08:48:48Z"
+      LocalStartTimestamp="2015-05-10T01:48:48"
+      EndTimestamp="2015-05-10T10:48:48Z"
+      LocalEndTimestamp="2015-05-10T03:48:48"
+      StartChargeCapacity="30341"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30364"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T10:48:48Z"
+      LocalStartTimestamp="2015-05-10T03:48:48"
+      EndTimestamp="2015-05-10T10:48:55Z"
+      LocalEndTimestamp="2015-05-10T03:48:55"
+      StartChargeCapacity="30364"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30371"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T10:48:55Z"
+      LocalStartTimestamp="2015-05-10T03:48:55"
+      EndTimestamp="2015-05-10T13:07:44Z"
+      LocalEndTimestamp="2015-05-10T06:07:44"
+      StartChargeCapacity="30371"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30386"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T13:07:44Z"
+      LocalStartTimestamp="2015-05-10T06:07:44"
+      EndTimestamp="2015-05-10T13:07:44Z"
+      LocalEndTimestamp="2015-05-10T06:07:44"
+      StartChargeCapacity="30386"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30398"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T13:07:44Z"
+      LocalStartTimestamp="2015-05-10T06:07:44"
+      EndTimestamp="2015-05-10T15:22:58Z"
+      LocalEndTimestamp="2015-05-10T08:22:58"
+      StartChargeCapacity="30398"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30420"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T15:22:58Z"
+      LocalStartTimestamp="2015-05-10T08:22:58"
+      EndTimestamp="2015-05-10T15:22:58Z"
+      LocalEndTimestamp="2015-05-10T08:22:58"
+      StartChargeCapacity="30420"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30428"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T15:22:58Z"
+      LocalStartTimestamp="2015-05-10T08:22:58"
+      EndTimestamp="2015-05-10T17:23:56Z"
+      LocalEndTimestamp="2015-05-10T10:23:56"
+      StartChargeCapacity="30428"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30446"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T17:23:56Z"
+      LocalStartTimestamp="2015-05-10T10:23:56"
+      EndTimestamp="2015-05-10T17:23:56Z"
+      LocalEndTimestamp="2015-05-10T10:23:56"
+      StartChargeCapacity="30446"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30454"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T17:23:56Z"
+      LocalStartTimestamp="2015-05-10T10:23:56"
+      EndTimestamp="2015-05-10T18:02:11Z"
+      LocalEndTimestamp="2015-05-10T11:02:11"
+      StartChargeCapacity="30454"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30461"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:02:11Z"
+      LocalStartTimestamp="2015-05-10T11:02:11"
+      EndTimestamp="2015-05-10T18:02:35Z"
+      LocalEndTimestamp="2015-05-10T11:02:35"
+      StartChargeCapacity="30461"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30461"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:02:35Z"
+      LocalStartTimestamp="2015-05-10T11:02:35"
+      EndTimestamp="2015-05-10T18:02:42Z"
+      LocalEndTimestamp="2015-05-10T11:02:42"
+      StartChargeCapacity="30461"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30461"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:02:42Z"
+      LocalStartTimestamp="2015-05-10T11:02:42"
+      EndTimestamp="2015-05-10T18:03:00Z"
+      LocalEndTimestamp="2015-05-10T11:03:00"
+      StartChargeCapacity="30461"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30461"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:03:00Z"
+      LocalStartTimestamp="2015-05-10T11:03:00"
+      EndTimestamp="2015-05-10T18:21:00Z"
+      LocalEndTimestamp="2015-05-10T11:21:00"
+      StartChargeCapacity="30461"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30465"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:21:00Z"
+      LocalStartTimestamp="2015-05-10T11:21:00"
+      EndTimestamp="2015-05-10T18:27:00Z"
+      LocalEndTimestamp="2015-05-10T11:27:00"
+      StartChargeCapacity="30465"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30465"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T18:27:00Z"
+      LocalStartTimestamp="2015-05-10T11:27:00"
+      EndTimestamp="2015-05-10T19:23:59Z"
+      LocalEndTimestamp="2015-05-10T12:23:59"
+      StartChargeCapacity="30465"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30476"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T19:23:59Z"
+      LocalStartTimestamp="2015-05-10T12:23:59"
+      EndTimestamp="2015-05-10T19:25:59Z"
+      LocalEndTimestamp="2015-05-10T12:25:59"
+      StartChargeCapacity="30476"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30480"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T19:25:59Z"
+      LocalStartTimestamp="2015-05-10T12:25:59"
+      EndTimestamp="2015-05-10T20:24:00Z"
+      LocalEndTimestamp="2015-05-10T13:24:00"
+      StartChargeCapacity="30480"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30491"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T20:24:00Z"
+      LocalStartTimestamp="2015-05-10T13:24:00"
+      EndTimestamp="2015-05-10T20:29:59Z"
+      LocalEndTimestamp="2015-05-10T13:29:59"
+      StartChargeCapacity="30491"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30491"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T20:29:59Z"
+      LocalStartTimestamp="2015-05-10T13:29:59"
+      EndTimestamp="2015-05-10T21:22:59Z"
+      LocalEndTimestamp="2015-05-10T14:22:59"
+      StartChargeCapacity="30491"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30503"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T21:22:59Z"
+      LocalStartTimestamp="2015-05-10T14:22:59"
+      EndTimestamp="2015-05-10T21:28:59Z"
+      LocalEndTimestamp="2015-05-10T14:28:59"
+      StartChargeCapacity="30503"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30506"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T21:28:59Z"
+      LocalStartTimestamp="2015-05-10T14:28:59"
+      EndTimestamp="2015-05-10T22:27:59Z"
+      LocalEndTimestamp="2015-05-10T15:27:59"
+      StartChargeCapacity="30506"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30518"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T22:27:59Z"
+      LocalStartTimestamp="2015-05-10T15:27:59"
+      EndTimestamp="2015-05-10T22:33:59Z"
+      LocalEndTimestamp="2015-05-10T15:33:59"
+      StartChargeCapacity="30518"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30518"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T22:33:59Z"
+      LocalStartTimestamp="2015-05-10T15:33:59"
+      EndTimestamp="2015-05-10T23:25:59Z"
+      LocalEndTimestamp="2015-05-10T16:25:59"
+      StartChargeCapacity="30518"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30529"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T23:25:59Z"
+      LocalStartTimestamp="2015-05-10T16:25:59"
+      EndTimestamp="2015-05-10T23:31:59Z"
+      LocalEndTimestamp="2015-05-10T16:31:59"
+      StartChargeCapacity="30529"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30533"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-10T23:31:59Z"
+      LocalStartTimestamp="2015-05-10T16:31:59"
+      EndTimestamp="2015-05-11T00:24:59Z"
+      LocalEndTimestamp="2015-05-10T17:24:59"
+      StartChargeCapacity="30533"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30544"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T00:24:59Z"
+      LocalStartTimestamp="2015-05-10T17:24:59"
+      EndTimestamp="2015-05-11T00:30:59Z"
+      LocalEndTimestamp="2015-05-10T17:30:59"
+      StartChargeCapacity="30544"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30544"
+      EndFullChargeCapacity="30311"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T00:30:59Z"
+      LocalStartTimestamp="2015-05-10T17:30:59"
+      EndTimestamp="2015-05-11T01:06:49Z"
+      LocalEndTimestamp="2015-05-10T18:06:49"
+      StartChargeCapacity="30544"
+      StartFullChargeCapacity="30311"
+      EndChargeCapacity="30551"
+      EndFullChargeCapacity="30551"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:06:49Z"
+      LocalStartTimestamp="2015-05-10T18:06:49"
+      EndTimestamp="2015-05-11T01:06:50Z"
+      LocalEndTimestamp="2015-05-10T18:06:50"
+      StartChargeCapacity="30551"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="30551"
+      EndFullChargeCapacity="30551"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:06:50Z"
+      LocalStartTimestamp="2015-05-10T18:06:50"
+      EndTimestamp="2015-05-11T01:07:01Z"
+      LocalEndTimestamp="2015-05-10T18:07:01"
+      StartChargeCapacity="30551"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="30544"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:07:01Z"
+      LocalStartTimestamp="2015-05-10T18:07:01"
+      EndTimestamp="2015-05-11T01:21:50Z"
+      LocalEndTimestamp="2015-05-10T18:21:50"
+      StartChargeCapacity="30544"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="30041"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:21:50Z"
+      LocalStartTimestamp="2015-05-10T18:21:50"
+      EndTimestamp="2015-05-11T01:21:57Z"
+      LocalEndTimestamp="2015-05-10T18:21:57"
+      StartChargeCapacity="30041"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="30038"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:21:57Z"
+      LocalStartTimestamp="2015-05-10T18:21:57"
+      EndTimestamp="2015-05-11T01:30:00Z"
+      LocalEndTimestamp="2015-05-10T18:30:00"
+      StartChargeCapacity="30038"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="29895"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:30:00Z"
+      LocalStartTimestamp="2015-05-10T18:30:00"
+      EndTimestamp="2015-05-11T01:32:00Z"
+      LocalEndTimestamp="2015-05-10T18:32:00"
+      StartChargeCapacity="29895"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="29880"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T01:32:00Z"
+      LocalStartTimestamp="2015-05-10T18:32:00"
+      EndTimestamp="2015-05-11T02:30:59Z"
+      LocalEndTimestamp="2015-05-10T19:30:59"
+      StartChargeCapacity="29880"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="28838"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T02:30:59Z"
+      LocalStartTimestamp="2015-05-10T19:30:59"
+      EndTimestamp="2015-05-11T02:32:00Z"
+      LocalEndTimestamp="2015-05-10T19:32:00"
+      StartChargeCapacity="28838"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="28819"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T02:32:00Z"
+      LocalStartTimestamp="2015-05-10T19:32:00"
+      EndTimestamp="2015-05-11T03:32:00Z"
+      LocalEndTimestamp="2015-05-10T20:32:00"
+      StartChargeCapacity="28819"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="27705"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T03:32:00Z"
+      LocalStartTimestamp="2015-05-10T20:32:00"
+      EndTimestamp="2015-05-11T03:32:59Z"
+      LocalEndTimestamp="2015-05-10T20:32:59"
+      StartChargeCapacity="27705"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="27686"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T03:32:59Z"
+      LocalStartTimestamp="2015-05-10T20:32:59"
+      EndTimestamp="2015-05-11T04:32:59Z"
+      LocalEndTimestamp="2015-05-10T21:32:59"
+      StartChargeCapacity="27686"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="26569"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T04:32:59Z"
+      LocalStartTimestamp="2015-05-10T21:32:59"
+      EndTimestamp="2015-05-11T04:33:59Z"
+      LocalEndTimestamp="2015-05-10T21:33:59"
+      StartChargeCapacity="26569"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="26550"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T04:33:59Z"
+      LocalStartTimestamp="2015-05-10T21:33:59"
+      EndTimestamp="2015-05-11T05:33:59Z"
+      LocalEndTimestamp="2015-05-10T22:33:59"
+      StartChargeCapacity="26550"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="25455"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T05:33:59Z"
+      LocalStartTimestamp="2015-05-10T22:33:59"
+      EndTimestamp="2015-05-11T05:35:00Z"
+      LocalEndTimestamp="2015-05-10T22:35:00"
+      StartChargeCapacity="25455"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="25436"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T05:35:00Z"
+      LocalStartTimestamp="2015-05-10T22:35:00"
+      EndTimestamp="2015-05-11T06:34:59Z"
+      LocalEndTimestamp="2015-05-10T23:34:59"
+      StartChargeCapacity="25436"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="24338"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T06:34:59Z"
+      LocalStartTimestamp="2015-05-10T23:34:59"
+      EndTimestamp="2015-05-11T06:35:59Z"
+      LocalEndTimestamp="2015-05-10T23:35:59"
+      StartChargeCapacity="24338"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="24319"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T06:35:59Z"
+      LocalStartTimestamp="2015-05-10T23:35:59"
+      EndTimestamp="2015-05-11T06:37:00Z"
+      LocalEndTimestamp="2015-05-10T23:37:00"
+      StartChargeCapacity="24319"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="24281"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T06:37:00Z"
+      LocalStartTimestamp="2015-05-10T23:37:00"
+      EndTimestamp="2015-05-11T07:35:59Z"
+      LocalEndTimestamp="2015-05-11T00:35:59"
+      StartChargeCapacity="24281"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="23220"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T07:35:59Z"
+      LocalStartTimestamp="2015-05-11T00:35:59"
+      EndTimestamp="2015-05-11T07:37:00Z"
+      LocalEndTimestamp="2015-05-11T00:37:00"
+      StartChargeCapacity="23220"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="23201"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T07:37:00Z"
+      LocalStartTimestamp="2015-05-11T00:37:00"
+      EndTimestamp="2015-05-11T08:35:59Z"
+      LocalEndTimestamp="2015-05-11T01:35:59"
+      StartChargeCapacity="23201"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="22106"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T08:35:59Z"
+      LocalStartTimestamp="2015-05-11T01:35:59"
+      EndTimestamp="2015-05-11T08:36:59Z"
+      LocalEndTimestamp="2015-05-11T01:36:59"
+      StartChargeCapacity="22106"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="22088"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T08:36:59Z"
+      LocalStartTimestamp="2015-05-11T01:36:59"
+      EndTimestamp="2015-05-11T09:36:59Z"
+      LocalEndTimestamp="2015-05-11T02:36:59"
+      StartChargeCapacity="22088"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="20925"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T09:36:59Z"
+      LocalStartTimestamp="2015-05-11T02:36:59"
+      EndTimestamp="2015-05-11T09:37:59Z"
+      LocalEndTimestamp="2015-05-11T02:37:59"
+      StartChargeCapacity="20925"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="20910"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T09:37:59Z"
+      LocalStartTimestamp="2015-05-11T02:37:59"
+      EndTimestamp="2015-05-11T10:38:00Z"
+      LocalEndTimestamp="2015-05-11T03:38:00"
+      StartChargeCapacity="20910"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="19748"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T10:38:00Z"
+      LocalStartTimestamp="2015-05-11T03:38:00"
+      EndTimestamp="2015-05-11T10:38:59Z"
+      LocalEndTimestamp="2015-05-11T03:38:59"
+      StartChargeCapacity="19748"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="19729"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T10:38:59Z"
+      LocalStartTimestamp="2015-05-11T03:38:59"
+      EndTimestamp="2015-05-11T11:38:59Z"
+      LocalEndTimestamp="2015-05-11T04:38:59"
+      StartChargeCapacity="19729"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="18589"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T11:38:59Z"
+      LocalStartTimestamp="2015-05-11T04:38:59"
+      EndTimestamp="2015-05-11T11:40:00Z"
+      LocalEndTimestamp="2015-05-11T04:40:00"
+      StartChargeCapacity="18589"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="18570"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T11:40:00Z"
+      LocalStartTimestamp="2015-05-11T04:40:00"
+      EndTimestamp="2015-05-11T12:39:59Z"
+      LocalEndTimestamp="2015-05-11T05:39:59"
+      StartChargeCapacity="18570"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="17389"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T12:39:59Z"
+      LocalStartTimestamp="2015-05-11T05:39:59"
+      EndTimestamp="2015-05-11T12:41:00Z"
+      LocalEndTimestamp="2015-05-11T05:41:00"
+      StartChargeCapacity="17389"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="17370"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T12:41:00Z"
+      LocalStartTimestamp="2015-05-11T05:41:00"
+      EndTimestamp="2015-05-11T13:40:59Z"
+      LocalEndTimestamp="2015-05-11T06:40:59"
+      StartChargeCapacity="17370"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="16196"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T13:40:59Z"
+      LocalStartTimestamp="2015-05-11T06:40:59"
+      EndTimestamp="2015-05-11T13:41:59Z"
+      LocalEndTimestamp="2015-05-11T06:41:59"
+      StartChargeCapacity="16196"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="16174"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T13:41:59Z"
+      LocalStartTimestamp="2015-05-11T06:41:59"
+      EndTimestamp="2015-05-11T14:02:06Z"
+      LocalEndTimestamp="2015-05-11T07:02:06"
+      StartChargeCapacity="16174"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="15758"
+      EndFullChargeCapacity="30551"
+      Ac="0"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:02:06Z"
+      LocalStartTimestamp="2015-05-11T07:02:06"
+      EndTimestamp="2015-05-11T14:02:06Z"
+      LocalEndTimestamp="2015-05-11T07:02:06"
+      StartChargeCapacity="15758"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="15758"
+      EndFullChargeCapacity="30551"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:02:06Z"
+      LocalStartTimestamp="2015-05-11T07:02:06"
+      EndTimestamp="2015-05-11T14:02:12Z"
+      LocalEndTimestamp="2015-05-11T07:02:12"
+      StartChargeCapacity="15758"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="15761"
+      EndFullChargeCapacity="30551"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:02:12Z"
+      LocalStartTimestamp="2015-05-11T07:02:12"
+      EndTimestamp="2015-05-11T14:02:18Z"
+      LocalEndTimestamp="2015-05-11T07:02:18"
+      StartChargeCapacity="15761"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="15769"
+      EndFullChargeCapacity="30529"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:02:18Z"
+      LocalStartTimestamp="2015-05-11T07:02:18"
+      EndTimestamp="2015-05-11T14:02:20Z"
+      LocalEndTimestamp="2015-05-11T07:02:20"
+      StartChargeCapacity="15769"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="15770"
+      EndFullChargeCapacity="30529"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:02:20Z"
+      LocalStartTimestamp="2015-05-11T07:02:20"
+      EndTimestamp="2015-05-11T14:06:00Z"
+      LocalEndTimestamp="2015-05-11T07:06:00"
+      StartChargeCapacity="15770"
+      StartFullChargeCapacity="30551"
+      EndChargeCapacity="16069"
+      EndFullChargeCapacity="30529"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:06:00Z"
+      LocalStartTimestamp="2015-05-11T07:06:00"
+      EndTimestamp="2015-05-11T14:09:00Z"
+      LocalEndTimestamp="2015-05-11T07:09:00"
+      StartChargeCapacity="16069"
+      StartFullChargeCapacity="30529"
+      EndChargeCapacity="16358"
+      EndFullChargeCapacity="30510"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:09:00Z"
+      LocalStartTimestamp="2015-05-11T07:09:00"
+      EndTimestamp="2015-05-11T14:12:00Z"
+      LocalEndTimestamp="2015-05-11T07:12:00"
+      StartChargeCapacity="16358"
+      StartFullChargeCapacity="30510"
+      EndChargeCapacity="16654"
+      EndFullChargeCapacity="30488"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:12:00Z"
+      LocalStartTimestamp="2015-05-11T07:12:00"
+      EndTimestamp="2015-05-11T14:15:00Z"
+      LocalEndTimestamp="2015-05-11T07:15:00"
+      StartChargeCapacity="16654"
+      StartFullChargeCapacity="30488"
+      EndChargeCapacity="16950"
+      EndFullChargeCapacity="30469"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:15:00Z"
+      LocalStartTimestamp="2015-05-11T07:15:00"
+      EndTimestamp="2015-05-11T14:18:00Z"
+      LocalEndTimestamp="2015-05-11T07:18:00"
+      StartChargeCapacity="16950"
+      StartFullChargeCapacity="30469"
+      EndChargeCapacity="17246"
+      EndFullChargeCapacity="30446"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:18:00Z"
+      LocalStartTimestamp="2015-05-11T07:18:00"
+      EndTimestamp="2015-05-11T14:21:00Z"
+      LocalEndTimestamp="2015-05-11T07:21:00"
+      StartChargeCapacity="17246"
+      StartFullChargeCapacity="30446"
+      EndChargeCapacity="17543"
+      EndFullChargeCapacity="30424"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:21:00Z"
+      LocalStartTimestamp="2015-05-11T07:21:00"
+      EndTimestamp="2015-05-11T14:24:00Z"
+      LocalEndTimestamp="2015-05-11T07:24:00"
+      StartChargeCapacity="17543"
+      StartFullChargeCapacity="30424"
+      EndChargeCapacity="17839"
+      EndFullChargeCapacity="30405"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:24:00Z"
+      LocalStartTimestamp="2015-05-11T07:24:00"
+      EndTimestamp="2015-05-11T14:27:00Z"
+      LocalEndTimestamp="2015-05-11T07:27:00"
+      StartChargeCapacity="17839"
+      StartFullChargeCapacity="30405"
+      EndChargeCapacity="18135"
+      EndFullChargeCapacity="30383"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:27:00Z"
+      LocalStartTimestamp="2015-05-11T07:27:00"
+      EndTimestamp="2015-05-11T14:30:00Z"
+      LocalEndTimestamp="2015-05-11T07:30:00"
+      StartChargeCapacity="18135"
+      StartFullChargeCapacity="30383"
+      EndChargeCapacity="18420"
+      EndFullChargeCapacity="30364"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:30:00Z"
+      LocalStartTimestamp="2015-05-11T07:30:00"
+      EndTimestamp="2015-05-11T14:32:20Z"
+      LocalEndTimestamp="2015-05-11T07:32:20"
+      StartChargeCapacity="18420"
+      StartFullChargeCapacity="30364"
+      EndChargeCapacity="18645"
+      EndFullChargeCapacity="30364"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:32:20Z"
+      LocalStartTimestamp="2015-05-11T07:32:20"
+      EndTimestamp="2015-05-11T14:32:33Z"
+      LocalEndTimestamp="2015-05-11T07:32:33"
+      StartChargeCapacity="18645"
+      StartFullChargeCapacity="30364"
+      EndChargeCapacity="18664"
+      EndFullChargeCapacity="30341"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:32:33Z"
+      LocalStartTimestamp="2015-05-11T07:32:33"
+      EndTimestamp="2015-05-11T14:34:00Z"
+      LocalEndTimestamp="2015-05-11T07:34:00"
+      StartChargeCapacity="18664"
+      StartFullChargeCapacity="30364"
+      EndChargeCapacity="18806"
+      EndFullChargeCapacity="30341"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:34:00Z"
+      LocalStartTimestamp="2015-05-11T07:34:00"
+      EndTimestamp="2015-05-11T14:36:00Z"
+      LocalEndTimestamp="2015-05-11T07:36:00"
+      StartChargeCapacity="18806"
+      StartFullChargeCapacity="30341"
+      EndChargeCapacity="19001"
+      EndFullChargeCapacity="30323"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:36:00Z"
+      LocalStartTimestamp="2015-05-11T07:36:00"
+      EndTimestamp="2015-05-11T14:39:00Z"
+      LocalEndTimestamp="2015-05-11T07:39:00"
+      StartChargeCapacity="19001"
+      StartFullChargeCapacity="30323"
+      EndChargeCapacity="19275"
+      EndFullChargeCapacity="30300"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:39:00Z"
+      LocalStartTimestamp="2015-05-11T07:39:00"
+      EndTimestamp="2015-05-11T14:40:59Z"
+      LocalEndTimestamp="2015-05-11T07:40:59"
+      StartChargeCapacity="19275"
+      StartFullChargeCapacity="30300"
+      EndChargeCapacity="19365"
+      EndFullChargeCapacity="30300"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:40:59Z"
+      LocalStartTimestamp="2015-05-11T07:40:59"
+      EndTimestamp="2015-05-11T14:42:00Z"
+      LocalEndTimestamp="2015-05-11T07:42:00"
+      StartChargeCapacity="19365"
+      StartFullChargeCapacity="30300"
+      EndChargeCapacity="19556"
+      EndFullChargeCapacity="30281"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:42:00Z"
+      LocalStartTimestamp="2015-05-11T07:42:00"
+      EndTimestamp="2015-05-11T14:45:00Z"
+      LocalEndTimestamp="2015-05-11T07:45:00"
+      StartChargeCapacity="19556"
+      StartFullChargeCapacity="30281"
+      EndChargeCapacity="19845"
+      EndFullChargeCapacity="30259"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:45:00Z"
+      LocalStartTimestamp="2015-05-11T07:45:00"
+      EndTimestamp="2015-05-11T14:49:00Z"
+      LocalEndTimestamp="2015-05-11T07:49:00"
+      StartChargeCapacity="19845"
+      StartFullChargeCapacity="30259"
+      EndChargeCapacity="20209"
+      EndFullChargeCapacity="30240"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:49:00Z"
+      LocalStartTimestamp="2015-05-11T07:49:00"
+      EndTimestamp="2015-05-11T14:52:00Z"
+      LocalEndTimestamp="2015-05-11T07:52:00"
+      StartChargeCapacity="20209"
+      StartFullChargeCapacity="30240"
+      EndChargeCapacity="20498"
+      EndFullChargeCapacity="30218"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:52:00Z"
+      LocalStartTimestamp="2015-05-11T07:52:00"
+      EndTimestamp="2015-05-11T14:55:00Z"
+      LocalEndTimestamp="2015-05-11T07:55:00"
+      StartChargeCapacity="20498"
+      StartFullChargeCapacity="30218"
+      EndChargeCapacity="20783"
+      EndFullChargeCapacity="30199"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:55:00Z"
+      LocalStartTimestamp="2015-05-11T07:55:00"
+      EndTimestamp="2015-05-11T14:58:00Z"
+      LocalEndTimestamp="2015-05-11T07:58:00"
+      StartChargeCapacity="20783"
+      StartFullChargeCapacity="30199"
+      EndChargeCapacity="21071"
+      EndFullChargeCapacity="30176"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T14:58:00Z"
+      LocalStartTimestamp="2015-05-11T07:58:00"
+      EndTimestamp="2015-05-11T15:01:00Z"
+      LocalEndTimestamp="2015-05-11T08:01:00"
+      StartChargeCapacity="21071"
+      StartFullChargeCapacity="30176"
+      EndChargeCapacity="21360"
+      EndFullChargeCapacity="30158"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:01:00Z"
+      LocalStartTimestamp="2015-05-11T08:01:00"
+      EndTimestamp="2015-05-11T15:04:00Z"
+      LocalEndTimestamp="2015-05-11T08:04:00"
+      StartChargeCapacity="21360"
+      StartFullChargeCapacity="30158"
+      EndChargeCapacity="21645"
+      EndFullChargeCapacity="30135"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:04:00Z"
+      LocalStartTimestamp="2015-05-11T08:04:00"
+      EndTimestamp="2015-05-11T15:07:00Z"
+      LocalEndTimestamp="2015-05-11T08:07:00"
+      StartChargeCapacity="21645"
+      StartFullChargeCapacity="30135"
+      EndChargeCapacity="21934"
+      EndFullChargeCapacity="30116"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:07:00Z"
+      LocalStartTimestamp="2015-05-11T08:07:00"
+      EndTimestamp="2015-05-11T15:10:00Z"
+      LocalEndTimestamp="2015-05-11T08:10:00"
+      StartChargeCapacity="21934"
+      StartFullChargeCapacity="30116"
+      EndChargeCapacity="22223"
+      EndFullChargeCapacity="30094"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:10:00Z"
+      LocalStartTimestamp="2015-05-11T08:10:00"
+      EndTimestamp="2015-05-11T15:13:00Z"
+      LocalEndTimestamp="2015-05-11T08:13:00"
+      StartChargeCapacity="22223"
+      StartFullChargeCapacity="30094"
+      EndChargeCapacity="22511"
+      EndFullChargeCapacity="30075"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:13:00Z"
+      LocalStartTimestamp="2015-05-11T08:13:00"
+      EndTimestamp="2015-05-11T15:16:00Z"
+      LocalEndTimestamp="2015-05-11T08:16:00"
+      StartChargeCapacity="22511"
+      StartFullChargeCapacity="30075"
+      EndChargeCapacity="22796"
+      EndFullChargeCapacity="30056"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:16:00Z"
+      LocalStartTimestamp="2015-05-11T08:16:00"
+      EndTimestamp="2015-05-11T15:19:00Z"
+      LocalEndTimestamp="2015-05-11T08:19:00"
+      StartChargeCapacity="22796"
+      StartFullChargeCapacity="30056"
+      EndChargeCapacity="23081"
+      EndFullChargeCapacity="30034"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:19:00Z"
+      LocalStartTimestamp="2015-05-11T08:19:00"
+      EndTimestamp="2015-05-11T15:22:00Z"
+      LocalEndTimestamp="2015-05-11T08:22:00"
+      StartChargeCapacity="23081"
+      StartFullChargeCapacity="30034"
+      EndChargeCapacity="23366"
+      EndFullChargeCapacity="30015"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:22:00Z"
+      LocalStartTimestamp="2015-05-11T08:22:00"
+      EndTimestamp="2015-05-11T15:25:00Z"
+      LocalEndTimestamp="2015-05-11T08:25:00"
+      StartChargeCapacity="23366"
+      StartFullChargeCapacity="30015"
+      EndChargeCapacity="23655"
+      EndFullChargeCapacity="29993"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:25:00Z"
+      LocalStartTimestamp="2015-05-11T08:25:00"
+      EndTimestamp="2015-05-11T15:28:00Z"
+      LocalEndTimestamp="2015-05-11T08:28:00"
+      StartChargeCapacity="23655"
+      StartFullChargeCapacity="29993"
+      EndChargeCapacity="23936"
+      EndFullChargeCapacity="29974"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:28:00Z"
+      LocalStartTimestamp="2015-05-11T08:28:00"
+      EndTimestamp="2015-05-11T15:31:00Z"
+      LocalEndTimestamp="2015-05-11T08:31:00"
+      StartChargeCapacity="23936"
+      StartFullChargeCapacity="29974"
+      EndChargeCapacity="24218"
+      EndFullChargeCapacity="29955"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:31:00Z"
+      LocalStartTimestamp="2015-05-11T08:31:00"
+      EndTimestamp="2015-05-11T15:34:00Z"
+      LocalEndTimestamp="2015-05-11T08:34:00"
+      StartChargeCapacity="24218"
+      StartFullChargeCapacity="29955"
+      EndChargeCapacity="24503"
+      EndFullChargeCapacity="29933"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:34:00Z"
+      LocalStartTimestamp="2015-05-11T08:34:00"
+      EndTimestamp="2015-05-11T15:37:00Z"
+      LocalEndTimestamp="2015-05-11T08:37:00"
+      StartChargeCapacity="24503"
+      StartFullChargeCapacity="29933"
+      EndChargeCapacity="24784"
+      EndFullChargeCapacity="29914"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:37:00Z"
+      LocalStartTimestamp="2015-05-11T08:37:00"
+      EndTimestamp="2015-05-11T15:40:00Z"
+      LocalEndTimestamp="2015-05-11T08:40:00"
+      StartChargeCapacity="24784"
+      StartFullChargeCapacity="29914"
+      EndChargeCapacity="25065"
+      EndFullChargeCapacity="29891"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:40:00Z"
+      LocalStartTimestamp="2015-05-11T08:40:00"
+      EndTimestamp="2015-05-11T15:42:00Z"
+      LocalEndTimestamp="2015-05-11T08:42:00"
+      StartChargeCapacity="25065"
+      StartFullChargeCapacity="29891"
+      EndChargeCapacity="25249"
+      EndFullChargeCapacity="29891"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:42:00Z"
+      LocalStartTimestamp="2015-05-11T08:42:00"
+      EndTimestamp="2015-05-11T15:43:00Z"
+      LocalEndTimestamp="2015-05-11T08:43:00"
+      StartChargeCapacity="25249"
+      StartFullChargeCapacity="29891"
+      EndChargeCapacity="25339"
+      EndFullChargeCapacity="29873"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:43:00Z"
+      LocalStartTimestamp="2015-05-11T08:43:00"
+      EndTimestamp="2015-05-11T15:46:00Z"
+      LocalEndTimestamp="2015-05-11T08:46:00"
+      StartChargeCapacity="25339"
+      StartFullChargeCapacity="29873"
+      EndChargeCapacity="25616"
+      EndFullChargeCapacity="29854"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:46:00Z"
+      LocalStartTimestamp="2015-05-11T08:46:00"
+      EndTimestamp="2015-05-11T15:49:00Z"
+      LocalEndTimestamp="2015-05-11T08:49:00"
+      StartChargeCapacity="25616"
+      StartFullChargeCapacity="29854"
+      EndChargeCapacity="25890"
+      EndFullChargeCapacity="29831"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:49:00Z"
+      LocalStartTimestamp="2015-05-11T08:49:00"
+      EndTimestamp="2015-05-11T15:52:00Z"
+      LocalEndTimestamp="2015-05-11T08:52:00"
+      StartChargeCapacity="25890"
+      StartFullChargeCapacity="29831"
+      EndChargeCapacity="26156"
+      EndFullChargeCapacity="29813"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:52:00Z"
+      LocalStartTimestamp="2015-05-11T08:52:00"
+      EndTimestamp="2015-05-11T15:55:00Z"
+      LocalEndTimestamp="2015-05-11T08:55:00"
+      StartChargeCapacity="26156"
+      StartFullChargeCapacity="29813"
+      EndChargeCapacity="26415"
+      EndFullChargeCapacity="29794"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:55:00Z"
+      LocalStartTimestamp="2015-05-11T08:55:00"
+      EndTimestamp="2015-05-11T15:59:00Z"
+      LocalEndTimestamp="2015-05-11T08:59:00"
+      StartChargeCapacity="26415"
+      StartFullChargeCapacity="29794"
+      EndChargeCapacity="26738"
+      EndFullChargeCapacity="29771"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T15:59:00Z"
+      LocalStartTimestamp="2015-05-11T08:59:00"
+      EndTimestamp="2015-05-11T16:02:00Z"
+      LocalEndTimestamp="2015-05-11T09:02:00"
+      StartChargeCapacity="26738"
+      StartFullChargeCapacity="29771"
+      EndChargeCapacity="26963"
+      EndFullChargeCapacity="29753"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:02:00Z"
+      LocalStartTimestamp="2015-05-11T09:02:00"
+      EndTimestamp="2015-05-11T16:06:00Z"
+      LocalEndTimestamp="2015-05-11T09:06:00"
+      StartChargeCapacity="26963"
+      StartFullChargeCapacity="29753"
+      EndChargeCapacity="27244"
+      EndFullChargeCapacity="29734"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:06:00Z"
+      LocalStartTimestamp="2015-05-11T09:06:00"
+      EndTimestamp="2015-05-11T16:11:00Z"
+      LocalEndTimestamp="2015-05-11T09:11:00"
+      StartChargeCapacity="27244"
+      StartFullChargeCapacity="29734"
+      EndChargeCapacity="27559"
+      EndFullChargeCapacity="29711"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:11:00Z"
+      LocalStartTimestamp="2015-05-11T09:11:00"
+      EndTimestamp="2015-05-11T16:15:00Z"
+      LocalEndTimestamp="2015-05-11T09:15:00"
+      StartChargeCapacity="27559"
+      StartFullChargeCapacity="29711"
+      EndChargeCapacity="27788"
+      EndFullChargeCapacity="29693"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:15:00Z"
+      LocalStartTimestamp="2015-05-11T09:15:00"
+      EndTimestamp="2015-05-11T16:21:00Z"
+      LocalEndTimestamp="2015-05-11T09:21:00"
+      StartChargeCapacity="27788"
+      StartFullChargeCapacity="29693"
+      EndChargeCapacity="28095"
+      EndFullChargeCapacity="29674"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:21:00Z"
+      LocalStartTimestamp="2015-05-11T09:21:00"
+      EndTimestamp="2015-05-11T16:27:00Z"
+      LocalEndTimestamp="2015-05-11T09:27:00"
+      StartChargeCapacity="28095"
+      StartFullChargeCapacity="29674"
+      EndChargeCapacity="28365"
+      EndFullChargeCapacity="29655"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:27:00Z"
+      LocalStartTimestamp="2015-05-11T09:27:00"
+      EndTimestamp="2015-05-11T16:34:00Z"
+      LocalEndTimestamp="2015-05-11T09:34:00"
+      StartChargeCapacity="28365"
+      StartFullChargeCapacity="29655"
+      EndChargeCapacity="28639"
+      EndFullChargeCapacity="29633"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:34:00Z"
+      LocalStartTimestamp="2015-05-11T09:34:00"
+      EndTimestamp="2015-05-11T16:41:23Z"
+      LocalEndTimestamp="2015-05-11T09:41:23"
+      StartChargeCapacity="28639"
+      StartFullChargeCapacity="29633"
+      EndChargeCapacity="28886"
+      EndFullChargeCapacity="29633"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:41:23Z"
+      LocalStartTimestamp="2015-05-11T09:41:23"
+      EndTimestamp="2015-05-11T16:41:30Z"
+      LocalEndTimestamp="2015-05-11T09:41:30"
+      StartChargeCapacity="28886"
+      StartFullChargeCapacity="29633"
+      EndChargeCapacity="28889"
+      EndFullChargeCapacity="29614"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:41:30Z"
+      LocalStartTimestamp="2015-05-11T09:41:30"
+      EndTimestamp="2015-05-11T16:43:00Z"
+      LocalEndTimestamp="2015-05-11T09:43:00"
+      StartChargeCapacity="28889"
+      StartFullChargeCapacity="29633"
+      EndChargeCapacity="28939"
+      EndFullChargeCapacity="29614"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:43:00Z"
+      LocalStartTimestamp="2015-05-11T09:43:00"
+      EndTimestamp="2015-05-11T16:52:00Z"
+      LocalEndTimestamp="2015-05-11T09:52:00"
+      StartChargeCapacity="28939"
+      StartFullChargeCapacity="29614"
+      EndChargeCapacity="29186"
+      EndFullChargeCapacity="29595"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T16:52:00Z"
+      LocalStartTimestamp="2015-05-11T09:52:00"
+      EndTimestamp="2015-05-11T17:01:00Z"
+      LocalEndTimestamp="2015-05-11T10:01:00"
+      StartChargeCapacity="29186"
+      StartFullChargeCapacity="29595"
+      EndChargeCapacity="29385"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T17:01:00Z"
+      LocalStartTimestamp="2015-05-11T10:01:00"
+      EndTimestamp="2015-05-11T17:40:00Z"
+      LocalEndTimestamp="2015-05-11T10:40:00"
+      StartChargeCapacity="29385"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29393"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T17:40:00Z"
+      LocalStartTimestamp="2015-05-11T10:40:00"
+      EndTimestamp="2015-05-11T17:46:00Z"
+      LocalEndTimestamp="2015-05-11T10:46:00"
+      StartChargeCapacity="29393"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29393"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T17:46:00Z"
+      LocalStartTimestamp="2015-05-11T10:46:00"
+      EndTimestamp="2015-05-11T18:44:59Z"
+      LocalEndTimestamp="2015-05-11T11:44:59"
+      StartChargeCapacity="29393"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29404"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T18:44:59Z"
+      LocalStartTimestamp="2015-05-11T11:44:59"
+      EndTimestamp="2015-05-11T18:45:59Z"
+      LocalEndTimestamp="2015-05-11T11:45:59"
+      StartChargeCapacity="29404"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29408"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T18:45:59Z"
+      LocalStartTimestamp="2015-05-11T11:45:59"
+      EndTimestamp="2015-05-11T19:43:59Z"
+      LocalEndTimestamp="2015-05-11T12:43:59"
+      StartChargeCapacity="29408"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29419"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T19:43:59Z"
+      LocalStartTimestamp="2015-05-11T12:43:59"
+      EndTimestamp="2015-05-11T19:49:00Z"
+      LocalEndTimestamp="2015-05-11T12:49:00"
+      StartChargeCapacity="29419"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29419"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T19:49:00Z"
+      LocalStartTimestamp="2015-05-11T12:49:00"
+      EndTimestamp="2015-05-11T20:42:00Z"
+      LocalEndTimestamp="2015-05-11T13:42:00"
+      StartChargeCapacity="29419"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29430"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T20:42:00Z"
+      LocalStartTimestamp="2015-05-11T13:42:00"
+      EndTimestamp="2015-05-11T20:48:00Z"
+      LocalEndTimestamp="2015-05-11T13:48:00"
+      StartChargeCapacity="29430"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29430"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T20:48:00Z"
+      LocalStartTimestamp="2015-05-11T13:48:00"
+      EndTimestamp="2015-05-11T20:49:37Z"
+      LocalEndTimestamp="2015-05-11T13:49:37"
+      StartChargeCapacity="29430"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29434"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T20:49:37Z"
+      LocalStartTimestamp="2015-05-11T13:49:37"
+      EndTimestamp="2015-05-11T20:49:49Z"
+      LocalEndTimestamp="2015-05-11T13:49:49"
+      StartChargeCapacity="29434"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29434"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="high"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T20:49:49Z"
+      LocalStartTimestamp="2015-05-11T13:49:49"
+      EndTimestamp="2015-05-11T21:47:00Z"
+      LocalEndTimestamp="2015-05-11T14:47:00"
+      StartChargeCapacity="29434"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29445"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T21:47:00Z"
+      LocalStartTimestamp="2015-05-11T14:47:00"
+      EndTimestamp="2015-05-11T21:53:00Z"
+      LocalEndTimestamp="2015-05-11T14:53:00"
+      StartChargeCapacity="29445"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29445"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T21:53:00Z"
+      LocalStartTimestamp="2015-05-11T14:53:00"
+      EndTimestamp="2015-05-11T22:46:59Z"
+      LocalEndTimestamp="2015-05-11T15:46:59"
+      StartChargeCapacity="29445"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29456"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T22:46:59Z"
+      LocalStartTimestamp="2015-05-11T15:46:59"
+      EndTimestamp="2015-05-11T22:52:59Z"
+      LocalEndTimestamp="2015-05-11T15:52:59"
+      StartChargeCapacity="29456"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29460"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T22:52:59Z"
+      LocalStartTimestamp="2015-05-11T15:52:59"
+      EndTimestamp="2015-05-11T23:22:18Z"
+      LocalEndTimestamp="2015-05-11T16:22:18"
+      StartChargeCapacity="29460"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29464"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T23:22:18Z"
+      LocalStartTimestamp="2015-05-11T16:22:18"
+      EndTimestamp="2015-05-11T23:22:25Z"
+      LocalEndTimestamp="2015-05-11T16:22:25"
+      StartChargeCapacity="29464"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29464"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="neutral"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T23:22:25Z"
+      LocalStartTimestamp="2015-05-11T16:22:25"
+      EndTimestamp="2015-05-11T23:44:59Z"
+      LocalEndTimestamp="2015-05-11T16:44:59"
+      StartChargeCapacity="29464"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29471"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T23:44:59Z"
+      LocalStartTimestamp="2015-05-11T16:44:59"
+      EndTimestamp="2015-05-11T23:50:00Z"
+      LocalEndTimestamp="2015-05-11T16:50:00"
+      StartChargeCapacity="29471"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29471"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-11T23:50:00Z"
+      LocalStartTimestamp="2015-05-11T16:50:00"
+      EndTimestamp="2015-05-12T00:49:00Z"
+      LocalEndTimestamp="2015-05-11T17:49:00"
+      StartChargeCapacity="29471"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29483"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T00:49:00Z"
+      LocalStartTimestamp="2015-05-11T17:49:00"
+      EndTimestamp="2015-05-12T00:54:00Z"
+      LocalEndTimestamp="2015-05-11T17:54:00"
+      StartChargeCapacity="29483"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29483"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T00:54:00Z"
+      LocalStartTimestamp="2015-05-11T17:54:00"
+      EndTimestamp="2015-05-12T01:48:00Z"
+      LocalEndTimestamp="2015-05-11T18:48:00"
+      StartChargeCapacity="29483"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29498"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T01:48:00Z"
+      LocalStartTimestamp="2015-05-11T18:48:00"
+      EndTimestamp="2015-05-12T01:53:00Z"
+      LocalEndTimestamp="2015-05-11T18:53:00"
+      StartChargeCapacity="29498"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29498"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T01:53:00Z"
+      LocalStartTimestamp="2015-05-11T18:53:00"
+      EndTimestamp="2015-05-12T03:52:00Z"
+      LocalEndTimestamp="2015-05-11T20:52:00"
+      StartChargeCapacity="29498"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29520"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T03:52:00Z"
+      LocalStartTimestamp="2015-05-11T20:52:00"
+      EndTimestamp="2015-05-12T04:01:11Z"
+      LocalEndTimestamp="2015-05-11T21:01:11"
+      StartChargeCapacity="29520"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29520"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T04:01:11Z"
+      LocalStartTimestamp="2015-05-11T21:01:11"
+      EndTimestamp="2015-05-12T06:00:00Z"
+      LocalEndTimestamp="2015-05-11T23:00:00"
+      StartChargeCapacity="29520"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29546"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T06:00:00Z"
+      LocalStartTimestamp="2015-05-11T23:00:00"
+      EndTimestamp="2015-05-12T06:17:46Z"
+      LocalEndTimestamp="2015-05-11T23:17:46"
+      StartChargeCapacity="29546"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29546"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T06:17:46Z"
+      LocalStartTimestamp="2015-05-11T23:17:46"
+      EndTimestamp="2015-05-12T07:59:42Z"
+      LocalEndTimestamp="2015-05-12T00:59:42"
+      StartChargeCapacity="29546"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29569"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T07:59:42Z"
+      LocalStartTimestamp="2015-05-12T00:59:42"
+      EndTimestamp="2015-05-12T07:59:45Z"
+      LocalEndTimestamp="2015-05-12T00:59:45"
+      StartChargeCapacity="29569"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29573"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T07:59:45Z"
+      LocalStartTimestamp="2015-05-12T00:59:45"
+      EndTimestamp="2015-05-12T10:02:07Z"
+      LocalEndTimestamp="2015-05-12T03:02:07"
+      StartChargeCapacity="29573"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29588"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T10:02:07Z"
+      LocalStartTimestamp="2015-05-12T03:02:07"
+      EndTimestamp="2015-05-12T10:02:09Z"
+      LocalEndTimestamp="2015-05-12T03:02:09"
+      StartChargeCapacity="29588"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29599"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T10:02:09Z"
+      LocalStartTimestamp="2015-05-12T03:02:09"
+      EndTimestamp="2015-05-12T12:24:32Z"
+      LocalEndTimestamp="2015-05-12T05:24:32"
+      StartChargeCapacity="29599"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29621"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T12:24:32Z"
+      LocalStartTimestamp="2015-05-12T05:24:32"
+      EndTimestamp="2015-05-12T12:24:32Z"
+      LocalEndTimestamp="2015-05-12T05:24:32"
+      StartChargeCapacity="29621"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29629"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T12:24:32Z"
+      LocalStartTimestamp="2015-05-12T05:24:32"
+      EndTimestamp="2015-05-12T14:37:00Z"
+      LocalEndTimestamp="2015-05-12T07:37:00"
+      StartChargeCapacity="29629"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29651"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T14:37:00Z"
+      LocalStartTimestamp="2015-05-12T07:37:00"
+      EndTimestamp="2015-05-12T14:37:00Z"
+      LocalEndTimestamp="2015-05-12T07:37:00"
+      StartChargeCapacity="29651"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29655"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T14:37:00Z"
+      LocalStartTimestamp="2015-05-12T07:37:00"
+      EndTimestamp="2015-05-12T16:37:17Z"
+      LocalEndTimestamp="2015-05-12T09:37:17"
+      StartChargeCapacity="29655"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29681"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T16:37:17Z"
+      LocalStartTimestamp="2015-05-12T09:37:17"
+      EndTimestamp="2015-05-12T16:43:33Z"
+      LocalEndTimestamp="2015-05-12T09:43:33"
+      StartChargeCapacity="29681"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29681"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T16:43:33Z"
+      LocalStartTimestamp="2015-05-12T09:43:33"
+      EndTimestamp="2015-05-12T18:24:36Z"
+      LocalEndTimestamp="2015-05-12T11:24:36"
+      StartChargeCapacity="29681"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29708"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T18:24:36Z"
+      LocalStartTimestamp="2015-05-12T11:24:36"
+      EndTimestamp="2015-05-12T18:24:37Z"
+      LocalEndTimestamp="2015-05-12T11:24:37"
+      StartChargeCapacity="29708"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29711"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T18:24:37Z"
+      LocalStartTimestamp="2015-05-12T11:24:37"
+      EndTimestamp="2015-05-12T20:52:00Z"
+      LocalEndTimestamp="2015-05-12T13:52:00"
+      StartChargeCapacity="29711"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29734"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T20:52:00Z"
+      LocalStartTimestamp="2015-05-12T13:52:00"
+      EndTimestamp="2015-05-12T20:52:01Z"
+      LocalEndTimestamp="2015-05-12T13:52:01"
+      StartChargeCapacity="29734"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29738"
+      EndFullChargeCapacity="29385"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T20:52:01Z"
+      LocalStartTimestamp="2015-05-12T13:52:01"
+      EndTimestamp="2015-05-12T21:36:18Z"
+      LocalEndTimestamp="2015-05-12T14:36:18"
+      StartChargeCapacity="29738"
+      StartFullChargeCapacity="29385"
+      EndChargeCapacity="29745"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T21:36:18Z"
+      LocalStartTimestamp="2015-05-12T14:36:18"
+      EndTimestamp="2015-05-12T23:00:36Z"
+      LocalEndTimestamp="2015-05-12T16:00:36"
+      StartChargeCapacity="29745"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29760"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T23:00:36Z"
+      LocalStartTimestamp="2015-05-12T16:00:36"
+      EndTimestamp="2015-05-12T23:00:36Z"
+      LocalEndTimestamp="2015-05-12T16:00:36"
+      StartChargeCapacity="29760"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29764"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-12T23:00:36Z"
+      LocalStartTimestamp="2015-05-12T16:00:36"
+      EndTimestamp="2015-05-13T00:57:49Z"
+      LocalEndTimestamp="2015-05-12T17:57:49"
+      StartChargeCapacity="29764"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29786"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T00:57:49Z"
+      LocalStartTimestamp="2015-05-12T17:57:49"
+      EndTimestamp="2015-05-13T01:12:22Z"
+      LocalEndTimestamp="2015-05-12T18:12:22"
+      StartChargeCapacity="29786"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29790"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T01:12:22Z"
+      LocalStartTimestamp="2015-05-12T18:12:22"
+      EndTimestamp="2015-05-13T03:14:03Z"
+      LocalEndTimestamp="2015-05-12T20:14:03"
+      StartChargeCapacity="29790"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29809"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T03:14:03Z"
+      LocalStartTimestamp="2015-05-12T20:14:03"
+      EndTimestamp="2015-05-13T03:14:07Z"
+      LocalEndTimestamp="2015-05-12T20:14:07"
+      StartChargeCapacity="29809"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29816"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T03:14:07Z"
+      LocalStartTimestamp="2015-05-12T20:14:07"
+      EndTimestamp="2015-05-13T03:26:21Z"
+      LocalEndTimestamp="2015-05-12T20:26:21"
+      StartChargeCapacity="29816"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29820"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T03:26:21Z"
+      LocalStartTimestamp="2015-05-12T20:26:21"
+      EndTimestamp="2015-05-13T03:26:21Z"
+      LocalEndTimestamp="2015-05-12T20:26:21"
+      StartChargeCapacity="29820"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29820"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T03:26:21Z"
+      LocalStartTimestamp="2015-05-12T20:26:21"
+      EndTimestamp="2015-05-13T03:26:40Z"
+      LocalEndTimestamp="2015-05-12T20:26:40"
+      StartChargeCapacity="29820"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29820"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="moderate"
+      />
+    <Drain
+      StartTimestamp="2015-05-13T03:26:40Z"
+      LocalStartTimestamp="2015-05-12T20:26:40"
+      EndTimestamp="2015-05-13T03:32:00Z"
+      LocalEndTimestamp="2015-05-12T20:32:00"
+      StartChargeCapacity="29820"
+      StartFullChargeCapacity="29745"
+      EndChargeCapacity="29820"
+      EndFullChargeCapacity="29745"
+      Ac="1"
+      Activity="neutral"
+      />
+  </EnergyDrains>
+  <ScenarioInstances>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="490990418550"
+        LowPowerStateTime="274777240110"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="30311"
+        TimeStamp="2015-05-10T04:24:16Z"
+        LocalTimestamp="2015-05-09T21:24:16"
+        Discharge="0"
+        EnergyDrain="0"
+        Ac="1"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="high"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="0" />
+        <DripsBucket Interval="2m" TotalTimePercent="0" />
+        <DripsBucket Interval="4m" TotalTimePercent="1" />
+        <DripsBucket Interval="8m" TotalTimePercent="5" />
+        <DripsBucket Interval="16m" TotalTimePercent="12" />
+        <DripsBucket Interval="»16m" TotalTimePercent="37" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="490990418550" ActivityLevel="high" Type="Fx Device" Id="1-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="44" ActiveTime="215822100291" ActivityLevel="high" Type="Networking" Id="1-2">
+        </TopBlocker>
+        <TopBlocker Name="Intel SD Host Controller (\_SB.SDHB)" ActiveTimePercent="40" ActiveTime="195171296977" ActivityLevel="high" Type="Fx Device" Id="1-3">
+        </TopBlocker>
+        <TopBlocker Name="Universal Telemetry Client" ActiveTimePercent="2" ActiveTime="9819808371" ActivityLevel="low" Type="Activator" Id="1-4">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="1" ActiveTime="5804730000" ActivityLevel="low" Type="PDC Phase" Id="1-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="low">
+        <Processor Name="CPU C0 Time" ActiveTimePercent="1" ActiveTime ="4522260310" ActivityLevel="low" Id="1-6" />
+      </Processors>
+      <Activators ActivityLevel="low">
+        <Activator Name="Universal Telemetry Client" ActiveTimePercent="2" ActiveTime="9819808371" ActivityLevel="low" Id="1-4">
+        </Activator>
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="1-1" ActiveTimePercent="100" ActiveTime="490990418550">
+        </Device>
+        <Device Name="Intel SD Host Controller (\_SB.SDHB)" ActivityLevel="high" Id="1-3" ActiveTimePercent="40" ActiveTime="195171296977">
+        </Device>
+        <Device Name="Intel SD Host Controller (\_SB.SDHA)" ActivityLevel="low" Id="1-7" ActiveTimePercent="0" ActiveTime="1735895483">
+        </Device>
+        <Device Name="I2C Controller (\_SB.I2C1)" ActivityLevel="low" Id="1-8" ActiveTimePercent="0" ActiveTime="219744125">
+        </Device>
+        <Device Name="I2C Controller (\_SB.I2C7)" ActivityLevel="low" Id="1-10" ActiveTimePercent="0" ActiveTime="20179590">
+        </Device>
+        <Device Name="Intel(R) HD Graphics (\_SB.PCI0.GFX0)" ActivityLevel="low" Id="1-11" ActiveTimePercent="0" ActiveTime="11071175">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="low">
+        <Phase Name="No CS Phase" ActiveTimePercent="1.2" ActiveTime="5804730000" ActivityLevel="low" Id="1-5" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="1-14" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="1-15" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="260000" ActivityLevel="low" Id="1-13" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="1-16" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="420000" ActivityLevel="low" Id="1-12" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="55820000" ActivityLevel="low" Id="1-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="1-17" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="98.8" ActiveTime="485079188550" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="44" ActiveTime="215822100291" ActivityLevel="high" Id="1-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="1" />
+            <Data Key="D0_IfInUnicastPackets" Value="21493" />
+            <Data Key="D0_IfOutUnicastPackets" Value="13663" />
+            <Data Key="D0_IfInMulticastPackets" Value="11366" />
+            <Data Key="D0_IfOutMulticastPackets" Value="1311" />
+            <Data Key="D0_IfInBroadcastPackets" Value="48938" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="47" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="TCPIP-DATA" ActiveTimePercent="0" ActiveTime="49914527" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="WCM" ActiveTimePercent="4" ActiveTime="20226605477" ActivityLevel="low">
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="4" ActiveTime="20225800896" ActivityLevel="low">
+              <CustomData>
+                <Data Key="Activation Count" Value="123" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+          <Blocker Name="WLAN" ActiveTimePercent="40" ActiveTime="195517571683" ActivityLevel="high">
+          </Blocker>
+          <Blocker Name="NDIS" ActiveTimePercent="0" ActiveTime="41183339" ActivityLevel="low">
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="254409508870"
+        LowPowerStateTime="0"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="30551"
+        TimeStamp="2015-05-10T18:03:00Z"
+        LocalTimestamp="2015-05-10T11:03:00"
+        Discharge="0"
+        EnergyDrain="0"
+        Ac="1"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="high"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="0" />
+        <DripsBucket Interval="2m" TotalTimePercent="0" />
+        <DripsBucket Interval="4m" TotalTimePercent="0" />
+        <DripsBucket Interval="8m" TotalTimePercent="0" />
+        <DripsBucket Interval="16m" TotalTimePercent="0" />
+        <DripsBucket Interval="»16m" TotalTimePercent="0" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="254409508870" ActivityLevel="high" Type="Fx Device" Id="2-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="254359508403" ActivityLevel="high" Type="Networking" Id="2-2">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="2-3">
+        </TopBlocker>
+        <TopBlocker Name="Connection Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="2-4">
+        </TopBlocker>
+        <TopBlocker Name="Presence Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="2-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="neutral">
+      </Processors>
+      <Activators ActivityLevel="neutral">
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="2-1" ActiveTimePercent="100" ActiveTime="254409508870">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="low">
+        <Phase Name="No CS Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-3" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-4" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-5" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-6" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-7" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-8" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="2-10" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="100.0" ActiveTime="254359508870" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="254359508403" ActivityLevel="high" Id="2-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="0" />
+            <Data Key="D0_IfInUnicastPackets" Value="0" />
+            <Data Key="D0_IfOutUnicastPackets" Value="0" />
+            <Data Key="D0_IfInMulticastPackets" Value="0" />
+            <Data Key="D0_IfOutMulticastPackets" Value="0" />
+            <Data Key="D0_IfInBroadcastPackets" Value="0" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="0" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="WCM" ActiveTimePercent="100" ActiveTime="254359508403" ActivityLevel="high">
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="100" ActiveTime="254359508434" ActivityLevel="high">
+              <CustomData>
+                <Data Key="Activation Count" Value="1" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="456212215560"
+        LowPowerStateTime="0"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="30551"
+        TimeStamp="2015-05-11T01:21:57Z"
+        LocalTimestamp="2015-05-10T18:21:57"
+        Discharge="14280"
+        EnergyDrain="1127"
+        Ac="0"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="high"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="0" />
+        <DripsBucket Interval="2m" TotalTimePercent="0" />
+        <DripsBucket Interval="4m" TotalTimePercent="0" />
+        <DripsBucket Interval="8m" TotalTimePercent="0" />
+        <DripsBucket Interval="16m" TotalTimePercent="0" />
+        <DripsBucket Interval="»16m" TotalTimePercent="0" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="456212215560" ActivityLevel="high" Type="Fx Device" Id="3-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="456162215014" ActivityLevel="high" Type="Networking" Id="3-2">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="3-3">
+        </TopBlocker>
+        <TopBlocker Name="Connection Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="3-4">
+        </TopBlocker>
+        <TopBlocker Name="Presence Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="3-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="neutral">
+      </Processors>
+      <Activators ActivityLevel="neutral">
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="3-1" ActiveTimePercent="100" ActiveTime="456212215560">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="low">
+        <Phase Name="No CS Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-3" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-4" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-5" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-6" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-7" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-8" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="3-10" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="100.0" ActiveTime="456162215560" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="456162215014" ActivityLevel="high" Id="3-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="0" />
+            <Data Key="D0_IfInUnicastPackets" Value="0" />
+            <Data Key="D0_IfOutUnicastPackets" Value="0" />
+            <Data Key="D0_IfInMulticastPackets" Value="0" />
+            <Data Key="D0_IfOutMulticastPackets" Value="0" />
+            <Data Key="D0_IfInBroadcastPackets" Value="0" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="0" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="WCM" ActiveTimePercent="100" ActiveTime="456162215014" ActivityLevel="high">
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="100" ActiveTime="456162204999" ActivityLevel="high">
+              <CustomData>
+                <Data Key="Activation Count" Value="1" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="18131979140"
+        LowPowerStateTime="0"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="30364"
+        TimeStamp="2015-05-11T14:02:20Z"
+        LocalTimestamp="2015-05-11T07:02:20"
+        Discharge="0"
+        EnergyDrain="0"
+        Ac="1"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="high"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="0" />
+        <DripsBucket Interval="2m" TotalTimePercent="0" />
+        <DripsBucket Interval="4m" TotalTimePercent="0" />
+        <DripsBucket Interval="8m" TotalTimePercent="0" />
+        <DripsBucket Interval="16m" TotalTimePercent="0" />
+        <DripsBucket Interval="»16m" TotalTimePercent="0" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="18131979140" ActivityLevel="high" Type="Fx Device" Id="4-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="18081964960" ActivityLevel="high" Type="Networking" Id="4-2">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="4-3">
+        </TopBlocker>
+        <TopBlocker Name="Connection Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="4-4">
+        </TopBlocker>
+        <TopBlocker Name="Presence Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="4-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="neutral">
+      </Processors>
+      <Activators ActivityLevel="neutral">
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="4-1" ActiveTimePercent="100" ActiveTime="18131979140">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="low">
+        <Phase Name="No CS Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-3" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-4" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-5" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-6" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-7" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-8" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="4-10" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="99.7" ActiveTime="18081979140" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="18081964960" ActivityLevel="high" Id="4-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="0" />
+            <Data Key="D0_IfInUnicastPackets" Value="0" />
+            <Data Key="D0_IfOutUnicastPackets" Value="0" />
+            <Data Key="D0_IfInMulticastPackets" Value="0" />
+            <Data Key="D0_IfOutMulticastPackets" Value="0" />
+            <Data Key="D0_IfInBroadcastPackets" Value="0" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="0" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="WCM" ActiveTimePercent="100" ActiveTime="18081964960" ActivityLevel="high">
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="100" ActiveTime="18081964960" ActivityLevel="high">
+              <CustomData>
+                <Data Key="Activation Count" Value="1" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="148991931860"
+        LowPowerStateTime="0"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="29385"
+        TimeStamp="2015-05-11T16:41:30Z"
+        LocalTimestamp="2015-05-11T09:41:30"
+        Discharge="0"
+        EnergyDrain="0"
+        Ac="1"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="high"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="0" />
+        <DripsBucket Interval="2m" TotalTimePercent="0" />
+        <DripsBucket Interval="4m" TotalTimePercent="0" />
+        <DripsBucket Interval="8m" TotalTimePercent="0" />
+        <DripsBucket Interval="16m" TotalTimePercent="0" />
+        <DripsBucket Interval="»16m" TotalTimePercent="0" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="148991931860" ActivityLevel="high" Type="Fx Device" Id="5-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="148941923589" ActivityLevel="high" Type="Networking" Id="5-2">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="5-3">
+        </TopBlocker>
+        <TopBlocker Name="Connection Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="5-4">
+        </TopBlocker>
+        <TopBlocker Name="Presence Phase" ActiveTimePercent="0" ActiveTime="0" ActivityLevel="low" Type="PDC Phase" Id="5-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="neutral">
+      </Processors>
+      <Activators ActivityLevel="neutral">
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="5-1" ActiveTimePercent="100" ActiveTime="148991931860">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="low">
+        <Phase Name="No CS Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-3" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-4" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-5" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-6" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-7" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-8" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="5-10" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="100.0" ActiveTime="148941931860" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="100" ActiveTime="148941923589" ActivityLevel="high" Id="5-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="0" />
+            <Data Key="D0_IfInUnicastPackets" Value="0" />
+            <Data Key="D0_IfOutUnicastPackets" Value="0" />
+            <Data Key="D0_IfInMulticastPackets" Value="0" />
+            <Data Key="D0_IfOutMulticastPackets" Value="0" />
+            <Data Key="D0_IfInBroadcastPackets" Value="0" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="0" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="WCM" ActiveTimePercent="100" ActiveTime="148941923589" ActivityLevel="high">
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="100" ActiveTime="148941913597" ActivityLevel="high">
+              <CustomData>
+                <Data Key="Activation Count" Value="1" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+    <ScenarioInstance 
+        Scenario="ConnectedStandby"
+        CsDuration="1010551229740"
+        LowPowerStateTime="890146177890"
+        HwLowPowerStateTime="0"
+        ChargeCapacity="0"
+        FullChargeCapacity="29745"
+        TimeStamp="2015-05-11T23:22:25Z"
+        LocalTimestamp="2015-05-11T16:22:25"
+        Discharge="0"
+        EnergyDrain="0"
+        Ac="1"
+        BatteryCountChanged="0"
+        CriticalBattery="0"
+        ActivityLevel="moderate"
+        PreVetoCount="0"
+        VetoCount="0"
+        IrTruncatePercentage="0"
+        DisconnectedStandby="0"
+        >
+      <DripsBuckets>
+        <DripsBucket Interval="100us" TotalTimePercent="0" />
+        <DripsBucket Interval="250us" TotalTimePercent="0" />
+        <DripsBucket Interval="500us" TotalTimePercent="0" />
+        <DripsBucket Interval="750us" TotalTimePercent="0" />
+        <DripsBucket Interval="1ms" TotalTimePercent="0" />
+        <DripsBucket Interval="2ms" TotalTimePercent="0" />
+        <DripsBucket Interval="4ms" TotalTimePercent="0" />
+        <DripsBucket Interval="8ms" TotalTimePercent="0" />
+        <DripsBucket Interval="16ms" TotalTimePercent="0" />
+        <DripsBucket Interval="32ms" TotalTimePercent="0" />
+        <DripsBucket Interval="64ms" TotalTimePercent="0" />
+        <DripsBucket Interval="128ms" TotalTimePercent="0" />
+        <DripsBucket Interval="256ms" TotalTimePercent="0" />
+        <DripsBucket Interval="512ms" TotalTimePercent="0" />
+        <DripsBucket Interval="1s" TotalTimePercent="0" />
+        <DripsBucket Interval="2s" TotalTimePercent="0" />
+        <DripsBucket Interval="4s" TotalTimePercent="0" />
+        <DripsBucket Interval="8s" TotalTimePercent="0" />
+        <DripsBucket Interval="16s" TotalTimePercent="0" />
+        <DripsBucket Interval="32s" TotalTimePercent="0" />
+        <DripsBucket Interval="1m" TotalTimePercent="1" />
+        <DripsBucket Interval="2m" TotalTimePercent="1" />
+        <DripsBucket Interval="4m" TotalTimePercent="5" />
+        <DripsBucket Interval="8m" TotalTimePercent="10" />
+        <DripsBucket Interval="16m" TotalTimePercent="24" />
+        <DripsBucket Interval="»16m" TotalTimePercent="47" />
+      </DripsBuckets>
+      <TopBlockers>
+        <TopBlocker Name="Unregistered Device \_SB.LPEA" ActiveTimePercent="100" ActiveTime="1010551229740" ActivityLevel="high" Type="Fx Device" Id="6-1">
+        </TopBlocker>
+        <TopBlocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="11" ActiveTime="115240053443" ActivityLevel="high" Type="Networking" Id="6-2">
+        </TopBlocker>
+        <TopBlocker Name="No CS Phase" ActiveTimePercent="9" ActiveTime="95576250000" ActivityLevel="moderate" Type="PDC Phase" Id="6-3">
+        </TopBlocker>
+        <TopBlocker Name="Universal Telemetry Client" ActiveTimePercent="1" ActiveTime="10105512297" ActivityLevel="low" Type="Activator" Id="6-4">
+        </TopBlocker>
+        <TopBlocker Name="Intel SD Host Controller (\_SB.SDHB)" ActiveTimePercent="1" ActiveTime="6838684353" ActivityLevel="low" Type="Fx Device" Id="6-5">
+        </TopBlocker>
+      </TopBlockers>
+      <Processors ActivityLevel="low">
+        <Processor Name="CPU C0 Time" ActiveTimePercent="0" ActiveTime ="3573017960" ActivityLevel="low" Id="6-6" />
+      </Processors>
+      <Activators ActivityLevel="low">
+        <Activator Name="Universal Telemetry Client" ActiveTimePercent="1" ActiveTime="10105512297" ActivityLevel="low" Id="6-4">
+        </Activator>
+      </Activators>
+      <Devices ActivityLevel="high">
+        <Device Name="Unregistered Device \_SB.LPEA" ActivityLevel="high" Id="6-1" ActiveTimePercent="100" ActiveTime="1010551229740">
+        </Device>
+        <Device Name="Intel SD Host Controller (\_SB.SDHB)" ActivityLevel="low" Id="6-5" ActiveTimePercent="1" ActiveTime="6838684353">
+        </Device>
+        <Device Name="Intel SD Host Controller (\_SB.SDHA)" ActivityLevel="low" Id="6-7" ActiveTimePercent="0" ActiveTime="1000031704">
+        </Device>
+        <Device Name="I2C Controller (\_SB.I2C1)" ActivityLevel="low" Id="6-8" ActiveTimePercent="0" ActiveTime="72825052">
+        </Device>
+      </Devices>
+      <Phases ActivityLevel="moderate">
+        <Phase Name="No CS Phase" ActiveTimePercent="9.5" ActiveTime="95576250000" ActivityLevel="moderate" Id="6-3" />
+        <Phase Name="Connection Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="6-12" />
+        <Phase Name="Presence Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="6-13" />
+        <Phase Name="PLM Phase" ActiveTimePercent="0.0" ActiveTime="270000" ActivityLevel="low" Id="6-11" />
+        <Phase Name="Maintenance Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="6-14" />
+        <Phase Name="DAM Phase" ActiveTimePercent="0.0" ActiveTime="680000" ActivityLevel="low" Id="6-10" />
+        <Phase Name="Low Power Phase" ActiveTimePercent="0.0" ActiveTime="53710000" ActivityLevel="low" Id="6-9" />
+        <Phase Name="Resiliency Notification Phase" ActiveTimePercent="0.0" ActiveTime="0" ActivityLevel="low" Id="6-15" />
+        <Phase Name="Resiliency Phase" ActiveTimePercent="90.5" ActiveTime="914870319740" ActivityLevel="low" />
+      </Phases>
+      <Networking ActivityLevel="high">
+        <Blocker Name="Broadcom 802.11abgn Wireless SDIO Adapter" ActiveTimePercent="11" ActiveTime="115240053443" ActivityLevel="high" Id="6-2">
+          <CustomData>
+            <Data Key="Surprise Wakes" Value="0" />
+            <Data Key="Spurious Wakes" Value="37" />
+            <Data Key="D0_IfInUnicastPackets" Value="56288" />
+            <Data Key="D0_IfOutUnicastPackets" Value="40342" />
+            <Data Key="D0_IfInMulticastPackets" Value="5463" />
+            <Data Key="D0_IfOutMulticastPackets" Value="1058" />
+            <Data Key="D0_IfInBroadcastPackets" Value="24327" />
+            <Data Key="D0_IfOutBroadcastPackets" Value="206" />
+            <Data Key="DX_IfInUnicastPackets" Value="0" />
+            <Data Key="DX_IfOutUnicastPackets" Value="0" />
+            <Data Key="DX_IfInMulticastPackets" Value="0" />
+            <Data Key="DX_IfOutMulticastPackets" Value="0" />
+            <Data Key="DX_IfInBroadcastPackets" Value="0" />
+            <Data Key="DX_IfOutBroadcastPackets" Value="0" />
+          </CustomData>
+          <Blocker Name="TCPIP-DAD" ActiveTimePercent="0" ActiveTime="72325737" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="TCPIP-DATA" ActiveTimePercent="0" ActiveTime="135009101" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="NCSI" ActiveTimePercent="1" ActiveTime="6005026274" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="WCM" ActiveTimePercent="11" ActiveTime="108174492309" ActivityLevel="high">
+            <Blocker Name="WLAN.WCM.Get Network List" ActiveTimePercent="0" ActiveTime="13395892" ActivityLevel="low">
+              <CustomData>
+                <Data Key="Activation Count" Value="7" />
+              </CustomData>
+            </Blocker>
+            <Blocker Name="WLAN.WCM.Connecting" ActiveTimePercent="0" ActiveTime="13561289" ActivityLevel="low">
+              <CustomData>
+                <Data Key="Activation Count" Value="1" />
+              </CustomData>
+            </Blocker>
+            <Blocker Name="WLAN.WCM.PDC Phase" ActiveTimePercent="11" ActiveTime="108158684447" ActivityLevel="high">
+              <CustomData>
+                <Data Key="Activation Count" Value="180" />
+              </CustomData>
+            </Blocker>
+          </Blocker>
+          <Blocker Name="WLAN" ActiveTimePercent="0" ActiveTime="165740283" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="DHCPv6" ActiveTimePercent="0" ActiveTime="1299617191" ActivityLevel="low">
+          </Blocker>
+          <Blocker Name="NDIS" ActiveTimePercent="0" ActiveTime="570160409" ActivityLevel="low">
+          </Blocker>
+        </Blocker>
+      </Networking>
+      <Blockers ActivityLevel="neutral">
+      </Blockers>
+    </ScenarioInstance>
+  </ScenarioInstances>
+  <Batteries>
+    <Battery>
+      <Id>SR Real Battery</Id>
+      <Manufacturer>Intel SR 1</Manufacturer>
+      <SerialNumber>123456789</SerialNumber>
+      <ManufactureDate></ManufactureDate>
+      <Chemistry>LION</Chemistry>
+      <LongTerm>1</LongTerm>
+      <RelativeCapacity>0</RelativeCapacity>
+      <DesignCapacity>30225</DesignCapacity>
+      <FullChargeCapacity>29745</FullChargeCapacity>
+      <CycleCount>48</CycleCount>
+    </Battery>
+  </Batteries>
+</SleepStudy>
