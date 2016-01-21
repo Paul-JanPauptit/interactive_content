@@ -68,7 +68,7 @@ Once visual studio express has been downloaded, the path to the root folder must
 
 	3)	Open the solution file Twitter_twitinvi.sln under:
 	 ..\Desktop\Project Encounter\Encounter#\Twitter_twitinvi\
-	- Change the rootdirectory variable to the relevant one as done with the Openframeworks module.
+	- In the file Program.cs change the rootdirectory variable to the relevant one   as done with the Openframeworks module. 
 
 ### Usage: 
 Run the applications using visual studio 2012 express. 
