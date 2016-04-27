@@ -19,7 +19,7 @@
 string ofApp::Check_triggered_landmark ()
 {
 	// Opening text file that is used for the interface between OF and Encounter
-	ifstream myfile (rootdirectory + "\\Project Encounter\\Package\\Config_Interfaces\\TriggeredLandmark.txt");
+	ifstream myfile (rootdirectory + "\\Package\\Config_Interfaces\\TriggeredLandmark.txt");
 	string buffer;
 	if (myfile.is_open())
 	{
@@ -94,7 +94,7 @@ vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename)
 //--------------------------------------------------------------
 void ofApp::setup() {
 
-	rootdirectory = "C:\\Users\\nikhilbanerjee\\Desktop\\";
+	rootdirectory = "C:\\Projects\\100FAT\\Project Encounter\\";
 
 	// MODULE: PIPELINE VARIABLES AND THREADS
 

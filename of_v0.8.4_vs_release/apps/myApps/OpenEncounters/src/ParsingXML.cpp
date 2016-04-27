@@ -147,9 +147,11 @@ vector<Hook> GetData(string filename)
 
 	//TCHAR szFileName[100] = _T("C:\\Users\\nikhil\\Desktop\\of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\BaseHooks.xml");
 
-	TCHAR szFileName[100];
+	TCHAR szFileName[200];
 
 	_tcscpy(szFileName, wmsg);
+
+	wmsg = nullptr;
 
 	delete []wmsg;
 

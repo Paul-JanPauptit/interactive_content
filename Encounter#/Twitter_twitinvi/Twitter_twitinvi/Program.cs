@@ -50,8 +50,8 @@ namespace Twitter_twitinvi
     
     class Program
     {
-    
-        static string rootdirectory = @"C:\Users\nikhilbanerjee\Desktop\";
+
+        static string rootdirectory = @"C:\Projects\100FAT\";
 
         static void Main(string[] args)
         {
@@ -219,7 +219,7 @@ namespace Twitter_twitinvi
                                                         select hook);
 
                     // Writing the selected hooks to an XML to be read in by OF
-                    using (XmlWriter writer = XmlWriter.Create(rootdirectory + @"Project Encounter\of_v0.8.4_vs_release\apps\myApps\OpenEncounters\bin\dataHooks.xml"))
+                    using (XmlWriter writer = XmlWriter.Create(rootdirectory + @"Project Encounter\of_v0.8.4_vs_release\apps\myApps\OpenEncounters\bin\data\Hooks.xml"))
                     {
                         writer.WriteStartDocument();
                         writer.WriteStartElement("Filtered_hooks");
