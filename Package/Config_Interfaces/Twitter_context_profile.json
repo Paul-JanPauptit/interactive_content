@@ -9,7 +9,7 @@
     'location_topleft' : '52.366914, 4.925413',
     'location_bottomright' : '52.366730, 4.926695',	
 
-  
+    'sensor_account' : 'EncounterSensor'
 }
 
 

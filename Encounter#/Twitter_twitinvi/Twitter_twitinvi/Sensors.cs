@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,46 +25,55 @@ namespace Sensors
 
     public static class WeatherSense
     {
-        private static string[] weather_types = new string[] { "Fair", "Partly Cloudy", "Mist", "Rain" };
+        private static string[] weather_types = new string[] { "Fair", "Clear", "Cloudy", "Mist", "Rain", "Snow" };
 
-        private static string Weather_IFTTT_twitter_module_username = "interactivescrn";
+        private static int lastCallMSec = 0;
+        private static string lastTweet = "";
 
-        private static string pick_weather_type_from_twitter_stream(string[] weather_types)
+        private static string PickWeatherTypeFromTwitterStream(string accountName, string[] weather_types)
         {
-            var user = User.GetUserFromScreenName(Weather_IFTTT_twitter_module_username);
-            IEnumerable<ITweet> last_tweets = user.GetUserTimeline(1);
-
-            List<ITweet> last_tweet = last_tweets.ToList();
-            string tweet_hold = last_tweet[0].ToString();
             string found = "";
+            int now = Environment.TickCount;
+            if (now - lastCallMSec > 60 * 1000)
+            {
+                var user = User.GetUserFromScreenName(accountName);
+                if (user == null)
+                {
+                    var exceptionDetails = ExceptionHandler.GetLastException();
+                    Console.WriteLine("ERROR: Cannot find Twitter user '" + accountName + "', ignoring weather type: " + exceptionDetails.ToString());
+                }
+                else
+                {
+                    lastCallMSec = now;
+                    IEnumerable<ITweet> last_tweets = user.GetUserTimeline(1);
+
+                    List<ITweet> last_tweet = last_tweets.ToList();
+                    lastTweet = last_tweet[0].ToString();
+                    Console.WriteLine("Found Tweet '" + lastTweet + "'");
+                }
+            }
             foreach (string weather in weather_types)
             {
-                if (tweet_hold.IndexOf(weather) > -1)
+                if (lastTweet.IndexOf(weather) > -1)
                 {
                     found = weather;
                     break;
                 }
             }
-
             return found;
         }
 
         // Method that returns a character representing sunny or cloudy in local region
-        static public char SunnyOrCloudy()
+        static public char SunnyOrCloudy(string accountName)
         {
-             string weather_type = pick_weather_type_from_twitter_stream(weather_types);
+            string weather_type = PickWeatherTypeFromTwitterStream(accountName, weather_types);
 
-             if (weather_type == "Mist" || weather_type == "Rain" || weather_type == "Partly Cloudy" || weather_type == "Cloudy")
-             {
-                 return 'C';
-             }
-             else if (weather_type == "Fair")
-             {
-                 return 'S';
-             }
-
-            //Failsafe
-            return 'S';
+            if (weather_type == "Mist" || weather_type == "Rain" || weather_type == "Cloudy" || weather_type == "Snow")
+            {
+                return 'C';
+            }
+            else 
+                return 'S';
         }
    }
 }
