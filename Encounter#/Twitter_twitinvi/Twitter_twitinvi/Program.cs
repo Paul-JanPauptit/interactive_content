@@ -44,14 +44,10 @@ namespace Twitter_twitinvi
     
     class Program
     {
-
-        static string rootdirectory = @"C:\Projects\100FAT\";
-
         static void Main(string[] args)
         {
             // Calling function when the application exits to clean up buffer files and folder
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
-            //AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(OnUnhandledException);
 
             try
             {
@@ -61,8 +57,23 @@ namespace Twitter_twitinvi
             catch (Exception e)
             {
                 LogWriter.LogWriter.WriteLog(e);
-                Process.Start(rootdirectory + @"Encounter#\Twitter_twitinvi\Twitter_twitinvi\bin\Debug\Twitter_twitinvi.exe");
-                               
+                Console.Write(e);
+            }
+        }
+
+        private static string _rootDirectory;
+        private static string RootDirectory
+        {
+            get
+            {
+                // Determine project root path from executable path.
+                if (String.IsNullOrEmpty(_rootDirectory))
+                {
+                    _rootDirectory = Path.GetFullPath(
+                        AppDomain.CurrentDomain.BaseDirectory +
+                        @"\..\..\..\..\..\");
+                }
+                return _rootDirectory;
             }
         }
 
@@ -71,7 +82,7 @@ namespace Twitter_twitinvi
             // BLOCK 1 : Twitter credentials
             // Twitter Credentials: Reading in a json configuration file with both credentials for the twitter integration
             // and the dedicated twitter account name used for "weather sense"
-            JObject TwitterConfiguration = JObject.Parse(File.ReadAllText( rootdirectory + @"Project Encounter\Package\Config_Interfaces\Twitter_context_profile.json"));
+            JObject TwitterConfiguration = JObject.Parse(File.ReadAllText( RootDirectory + @"Package\Config_Interfaces\Twitter_context_profile.json"));
             // Locally reading and storing all credential values
             string consumer_key = (string)TwitterConfiguration["consumer_key"];
             string consumer_secret = (string)TwitterConfiguration["consumer_secret"];
@@ -87,7 +98,7 @@ namespace Twitter_twitinvi
             // BLOCK 2: Populating Landmarks
             // Import excel worksheet for landmark initialization (Name, Categories, Hashtag_trackers, Thematic_Metatags)
             // Reading excel worksheet using exceldatareader nuget package
-            FileStream stream = File.Open(rootdirectory + @"Project Encounter\Package\Config_Interfaces\Landmarks_Categories.xlsx", FileMode.Open, FileAccess.Read);
+            FileStream stream = File.Open(RootDirectory + @"Package\Config_Interfaces\Landmarks_Categories.xlsx", FileMode.Open, FileAccess.Read);
             IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
             DataSet result = excelReader.AsDataSet();
             // This should initialize all the parameters in the Lanmarks object array using its contructor
@@ -191,7 +202,7 @@ namespace Twitter_twitinvi
                 string[] relevantHookCategories = detectedlandmark.Categories;
 
                 // Writing detected landmark to text file interface between here and OF
-                using (StreamWriter writer = new StreamWriter(rootdirectory + @"Project Encounter\Package\Config_Interfaces\TriggeredLandmark.txt", false))
+                using (StreamWriter writer = new StreamWriter(RootDirectory + @"Package\Config_Interfaces\TriggeredLandmark.txt", false))
                 {
                     writer.Write(detectedlandmark.Name);
                 }
@@ -216,7 +227,7 @@ namespace Twitter_twitinvi
                                                     select hook);
 
                 // Writing the selected hooks to an XML to be read in by OF
-                using (XmlWriter writer = XmlWriter.Create(rootdirectory + @"Project Encounter\of_v0.8.4_vs_release\apps\myApps\OpenEncounters\bin\data\Hooks.xml"))
+                using (XmlWriter writer = XmlWriter.Create(RootDirectory + @"of_v0.8.4_vs_release\apps\myApps\OpenEncounters\bin\data\Hooks.xml"))
                 {
                     writer.WriteStartDocument();
                     writer.WriteStartElement("Filtered_hooks");
@@ -254,7 +265,7 @@ namespace Twitter_twitinvi
             Console.WriteLine("Starting clean up...");
 
             // Cleaning up text file for landmark buffer
-            File.WriteAllText( rootdirectory + @"Project Encounter\Package\Config_Interfaces\TriggeredLandmark.txt", String.Empty);
+            File.WriteAllText( RootDirectory + @"Package\Config_Interfaces\TriggeredLandmark.txt", String.Empty);
 
         }
 

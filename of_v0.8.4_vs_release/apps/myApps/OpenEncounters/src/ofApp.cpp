@@ -94,7 +94,7 @@ vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename)
 //--------------------------------------------------------------
 void ofApp::setup() {
 
-	rootdirectory = "C:\\Projects\\100FAT\\Project Encounter\\";
+	rootdirectory = ofFilePath::getCurrentExeDir() + "..\\..\\..\\..\\..\\";
 
 	// MODULE: PIPELINE VARIABLES AND THREADS
 
@@ -130,7 +130,7 @@ void ofApp::setup() {
 
 	// TEST VECTOR
 	fontsize = 80;
-	ofToggleFullscreen();
+	// ofToggleFullscreen();
 
 	// Root Directory
 
@@ -406,7 +406,7 @@ void ofApp::draw(){
 
 	// Drawing video frame
 	ofSetColor(255,255,255);
-	currentVideoContainer.draw(0,0, 1980,1080);
+	currentVideoContainer.draw(0,0, 1920, 1080);
 
 	// Video path test string : uncomment for testing purposes
 	//TempVideoPath.drawString(TextHolder, 50, 50);
