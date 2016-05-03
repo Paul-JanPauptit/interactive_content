@@ -32,8 +32,13 @@ namespace Twitter_twitinvi
         public string Name {get; set;}
         public string[] Categories;
         public string[] Thematic_metatags; // For open archives video retrieval 
-        public string[] Hashtag_trackers;  // Hashtags for twitter stream tracking
+        public string[] Hashtag_trackers;  // Hashtags for twitter stream tracking             
+    }
 
-                
+    // Concrete landmark match from a tweet.
+    public class MatchedLandmark
+    {
+        public string Hashtag;
+        public Landmark Landmark;
     }
 }

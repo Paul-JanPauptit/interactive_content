@@ -196,15 +196,15 @@ namespace Twitter_twitinvi
                 string tweet = arg.Tweet.ToString();
 
                 // Searching through tweet to find relevant landmark
-                Landmark detectedlandmark = Find_tweeted_landmark(Landmarks, tweet);
+                MatchedLandmark detectedlandmark = Find_tweeted_landmark(Landmarks, tweet);
 
                 // Getting the hook categories that the landmark satisfies
-                string[] relevantHookCategories = detectedlandmark.Categories;
+                string[] relevantHookCategories = detectedlandmark.Landmark.Categories;
 
                 // Writing detected landmark to text file interface between here and OF
                 using (StreamWriter writer = new StreamWriter(RootDirectory + @"Package\Config_Interfaces\TriggeredLandmark.txt", false))
                 {
-                    writer.Write(detectedlandmark.Name);
+                    writer.Write("{0}\r\n{1}", detectedlandmark.Landmark.Name, detectedlandmark.Hashtag);
                 }
 
                 // Selecting hooks that belong to the relevant categories corresponding to the landmark
@@ -247,7 +247,8 @@ namespace Twitter_twitinvi
 
                 Console.WriteLine(tweet);
                 Console.WriteLine();
-                Console.Write("Landmark Triggered:"); Console.Write(detectedlandmark.Name);
+                Console.Write("Landmark Triggered:"); 
+                Console.Write(detectedlandmark.Landmark.Name);
                 Console.WriteLine();
 
                 //System.Threading.Thread.Sleep(
@@ -308,10 +309,13 @@ namespace Twitter_twitinvi
         }
 
         // Method for returning the location/landmark for the mathched hashtag : return type string for landmark that will be matched in the switch statment
-        static public Landmark Find_tweeted_landmark(Landmark[] landmarks, string tweet)
+        static public MatchedLandmark Find_tweeted_landmark(Landmark[] landmarks, string tweet)
         {
             tweet = tweet.ToLower();
-            Landmark found = new Landmark();
+            MatchedLandmark found = new MatchedLandmark 
+            {
+                Landmark = new Landmark() 
+            };
             // Searching for each hashtag trigger for every landmark in tweet to find the associated landmark to trigger videos and hooks
             foreach (Landmark landmark in landmarks )
             {
@@ -319,7 +323,11 @@ namespace Twitter_twitinvi
                 {
                     if (tweet.IndexOf(hashtag) > -1)
                     {
-                        found = landmark;
+                        found = new MatchedLandmark
+                        {
+                            Landmark = landmark,
+                            Hashtag = hashtag
+                        };
                         break;
                     }
                 }

@@ -15,20 +15,30 @@
 #include <stdio.h>
 #include <ctime>
 
+
 // Method to check the triggered landmark from text file that the twitter app writes to
-string ofApp::Check_triggered_landmark ()
+TriggeredLandmark ofApp::Check_triggered_landmark ()
 {
 	// Opening text file that is used for the interface between OF and Encounter
 	ifstream myfile (rootdirectory + "\\Package\\Config_Interfaces\\TriggeredLandmark.txt");
+
+	std::vector<std::string> lines;
+
 	string buffer;
 	if (myfile.is_open())
 	{
 		while ( getline (myfile, buffer) )
 		{
-			buffer = buffer.c_str();
+			lines.push_back(buffer.c_str());
 		}
 	}
-	return buffer;
+
+	TriggeredLandmark landmark;
+	if (lines.size() > 0)
+		landmark.name = lines[0];
+	if (lines.size() > 1)
+		landmark.hashtag = lines[1];
+	return landmark;
 }
 
 // Class hook default constructor
@@ -141,8 +151,9 @@ void ofApp::setup() {
 //--------------------------------------------------------------
 void ofApp::update(){
 	
-	// Reading textfile interface and finding the latest landmark triggered	      
-	Landmark_current = Check_triggered_landmark();
+	// Reading textfile interface and finding the latest landmark triggered	
+	TriggeredLandmark triggeredLandMark = Check_triggered_landmark();
+	Landmark_current = triggeredLandMark.name;
 
 	// CONDITIONAL MODULE 1 : FIRST CYCLE
 	if (firstcycle == true)
@@ -154,14 +165,20 @@ void ofApp::update(){
 		if (Landmark_current.size() != NULL)
 		{
 			// QUEUE NEXT BLOCK : LANDMARK AND HOOK
-			Landmarks_queue.push(Landmark_current);
+			Landmarks_queue.push(triggeredLandMark);
 			hooks_dynamic_import = ofApp::GetHooks(rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\Hooks.xml");
 			Hooks_queue.push(hooks_dynamic_import);
-			HookText = Hooks_queue.front().at(hookindex).text;
+			ofApp::HookFromEncouter hook =  Hooks_queue.front().at(hookindex);
+			HookText = hook.text;
 			// Setting text, font and dropshadow
-			HookTextHolder.init(Hooks_queue.front().at(hookindex).hookfont, fontsize);
-			HookDropShadow.init(Hooks_queue.front().at(hookindex).hookfont, fontsize);
+			HookTextHolder.init(hook.hookfont, fontsize);
+			HookDropShadow.init(hook.hookfont, fontsize);
 			hookindex++;
+			HashtagTextHolder.init(hook.hookfont, fontsize * 0.8f);
+			HashtagDropShadow.init(hook.hookfont, fontsize * 0.8f);
+			HashtagTextHolder.setText(triggeredLandMark.hashtag);
+			HashtagDropShadow.setText(triggeredLandMark.hashtag);
+
 			videofrompipeline.append("MediaContainer/").append(Landmark_current).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
 			currentVideoContainer.loadMovie(videofrompipeline);
 			videoCountPipeline++;
@@ -193,7 +210,7 @@ void ofApp::update(){
 	Timer_Hook = ( std::clock() - ClockStart_Hook ) / (double) CLOCKS_PER_SEC;
 
 	// CONDITIONAL_MODULE 2: NO LANDMARK TRIGGERED
-	if (Check_triggered_landmark().size() == NULL || Landmarks_queue.size() == 0 || nolandmarkwindowlive == true)
+	if (Landmark_current.size() == NULL || Landmarks_queue.size() == 0 || nolandmarkwindowlive == true)
 	{
 		nolandmarkwindowlive = true;
 
@@ -233,6 +250,8 @@ void ofApp::update(){
 			videoCountPipeline = rand() % 3;
 			TextHolder = videofrompipeline;
 
+			// HashtagTextHolder.init("", fontsize);
+
 			// Reset video clock
 			ClockStart_VideoWindow = std::clock();
 			generic_count = rand() % 5;
@@ -248,7 +267,7 @@ void ofApp::update(){
 	}
 
 	// CONDITIONAL_MODULE 3: LANDMARK TRIGGERED
-	if (Check_triggered_landmark().size() != NULL && nolandmarkwindowlive != true)
+	if (Landmark_current.size() != NULL && nolandmarkwindowlive != true)
 	{
 		// LANDMARK WINDOW LIVE
 		if (Timer_LandmarkWindow <= Time_LandmarkWindow)
@@ -280,13 +299,17 @@ void ofApp::update(){
 			{
 				// Set the path for video to be played based on the current landmark in queue and the video count of the mediacontainer folder
 				videofrompipeline.clear();
-				videofrompipeline.append("MediaContainer/").append(Landmarks_queue.front()).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
+				TriggeredLandmark queuedLandmark = Landmarks_queue.front();
+				videofrompipeline.append("MediaContainer/").append(queuedLandmark.name).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
 				// Load movie in main video container
 				currentVideoContainer.loadMovie(videofrompipeline);
 				// Increment video count
 				videoCountPipeline ++;
 				// Reset video clock
 				ClockStart_VideoWindow = std::clock();
+			
+				HashtagTextHolder.setText(queuedLandmark.hashtag);
+				HashtagDropShadow.setText(queuedLandmark.hashtag);
 
 				// TEST: To check if the right video is being played
 				TextHolder = videofrompipeline;
@@ -314,7 +337,8 @@ void ofApp::update(){
 
 			else 
 			{
-				currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + Landmarks_queue.front() + "_transitionanimation.mov");
+				string queuedLandmark = Landmarks_queue.front().name;
+				currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + queuedLandmark + "_transitionanimation.mov");
 			}	
 
 			ClockStart_TransitionMapVideo = std::clock();
@@ -352,7 +376,7 @@ void ofApp::update(){
 	if (firstcycle != true){
 		if(Landmark_current != Landmark_previous)
 		{			
-			Landmarks_queue.push(Landmark_current);
+			Landmarks_queue.push(triggeredLandMark);
 			hooks_dynamic_import = ofApp::GetHooks(rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\Hooks.xml");
 			Hooks_queue.push(hooks_dynamic_import);
 		}
@@ -398,6 +422,9 @@ void ofApp::update(){
 		}
 	}
 
+	HashtagTextHolder.setColor(255, 255, 153, 255);
+	HashtagDropShadow.setColor(8, 8, 8, 255);
+
 	firstcycle = false;
 	
 }
@@ -412,8 +439,15 @@ void ofApp::draw(){
 	//TempVideoPath.drawString(TextHolder, 50, 50);
 
 	// Drawing Hook
-	HookDropShadow.drawCenter(1990/2, 1090/2 - 100);
-	HookTextHolder.drawCenter(1980/2,1080/2 - 100);
+	HookDropShadow.drawCenter(1920 / 2 + 5, 1080 / 2 - 100 + 5);
+	HookTextHolder.drawCenter(1920 / 2, 1080 / 2 - 100);
+
+	// Drawing hashtag (but only if we are showing a hook)
+	if (!HookText.empty())
+	{
+		HashtagDropShadow.drawCenter(1920 / 2 + 5, 10 + 5);
+		HashtagTextHolder.drawCenter(1920 / 2, 10);
+	}
 	
 	
 	// Playing the video frame

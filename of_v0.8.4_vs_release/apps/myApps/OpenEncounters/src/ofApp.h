@@ -14,6 +14,12 @@
 #include "ParsingXML.h"
 
 
+struct TriggeredLandmark
+{
+	string name;
+	string hashtag;
+};
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -89,10 +95,13 @@ class ofApp : public ofBaseApp{
 		// Landmark
 		string currentLandmark;
 		
-		string Check_triggered_landmark();
+		TriggeredLandmark Check_triggered_landmark();
 		
 		string Landmark_previous;
 		string Landmark_current;
+
+		// Hashtag
+		string Hashtag_current;
 
 
 		// Videos 
@@ -140,7 +149,7 @@ class ofApp : public ofBaseApp{
 
 		
 		// ALL LANDMARK RELATED QUEUES 
-		queue <string> Landmarks_queue;
+		queue <TriggeredLandmark> Landmarks_queue;
 
 		bool firstcycle;
 		bool transition_movie_loaded;
@@ -151,6 +160,10 @@ class ofApp : public ofBaseApp{
 
 		ofTrueTypeFont TempVideoPath;
 		string TextHolder;
+
+		// Hashtag visualization
+		ofxTextBlock HashtagTextHolder;
+		ofxTextBlock HashtagDropShadow;
 
 		// TEXT VISUALIZATION HOLDERS -> FOR HOOKS
 		ofxTextBlock HookTextHolder;
