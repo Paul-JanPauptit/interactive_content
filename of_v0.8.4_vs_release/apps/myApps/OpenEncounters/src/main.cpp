@@ -9,7 +9,7 @@ int main( ){
 	ofAppGLFWWindow win;
 	win.setMultiDisplayFullscreen(false);
 
-	ofSetupOpenGL(1920,1080,OF_WINDOW);			// <-------- setup the GL context
+	ofSetupOpenGL(Global::VIDEO_RESOLUTION_X,Global::VIDEO_RESOLUTION_Y,OF_WINDOW);			// <-------- setup the GL context
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

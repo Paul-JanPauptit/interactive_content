@@ -13,6 +13,12 @@
 
 #include "ParsingXML.h"
 
+static class Global {
+public:
+	static const int VIDEO_RESOLUTION_X = 640;
+	static const int VIDEO_RESOLUTION_Y = 384;
+	static const int FONT_SIZE = 40;
+};
 
 struct TriggeredLandmark
 {
@@ -21,7 +27,6 @@ struct TriggeredLandmark
 };
 
 class ofApp : public ofBaseApp{
-
 	public:
 		void setup();
 		void update();
@@ -108,8 +113,11 @@ class ofApp : public ofBaseApp{
 		ofVideoPlayer currentVideoContainer;
 		int videoCountPipeline;
 		string videofrompipeline;
+		map<string, ofDirectory> videoDirs;
 		
 		int numberOfvideosinpipeline;
+
+		void playNextMovie(string landmark);
 
 		// Timing
 

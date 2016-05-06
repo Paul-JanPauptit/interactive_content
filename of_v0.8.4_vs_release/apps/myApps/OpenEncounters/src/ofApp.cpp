@@ -5,6 +5,7 @@
 #include "ofTypes.h"
 #include "ofGraphics.h"
 #include "ofAppRunner.h"
+#include "ofFileUtils.h"
 #include "Poco/String.h"
 #include "Poco/LocalDateTime.h"
 #include "Poco/DateTimeFormatter.h"
@@ -47,24 +48,6 @@ ofApp::HookFromEncouter::HookFromEncouter()
 	text = "Would you befriend an elf? ";
 	hookfont = "COPRGTB.ttf";
 }
-
-// Storing all landmark values
-class Landmark_Array 
-{
-public:
-
-	string landmark_array[6];
-
-	Landmark_Array() 
-	{
-		landmark_array[0] = "Artis";
-		landmark_array[1] = "Volkshotel";
-		landmark_array[2] = "OBA";
-		landmark_array[3] = "Wibautstraat";
-		landmark_array[4] = "SciencePark";
-		landmark_array[5] = "Oosterpark";
-	}
-};
 
 // Gets hooks by parsing xml file filename, reading in node values and returning a vector of HookFromEncounter objects
 vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename)
@@ -138,15 +121,35 @@ void ofApp::setup() {
 	// Getting all hooks from base xml file that contains all the hooks
 	hooks_base_import = ofApp::GetHooks( rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\BaseHooks.xml");
 
-	// TEST VECTOR
-	fontsize = 80;
+	fontsize = Global::FONT_SIZE;
 	// ofToggleFullscreen();
-
-	// Root Directory
-
-	
 }
 
+
+void ofApp::playNextMovie(string landmark)
+{
+	string path = rootdirectory;
+	path.append("of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\MediaContainer\\").append(landmark);
+
+	ofDirectory dir;
+	if (videoDirs.count(path) == 0)
+	{
+		dir = ofDirectory(path);
+		dir.allowExt("mp4");
+		dir.listDir();
+		videoDirs[path] = dir;
+	}
+	else
+		dir = videoDirs[path];
+
+	int count = dir.size();
+	if (videoCountPipeline >= count)
+		videoCountPipeline = 0;
+
+	string filename = dir.getPath(videoCountPipeline);
+	currentVideoContainer.loadMovie(filename);
+	videoCountPipeline++;
+}
 
 //--------------------------------------------------------------
 void ofApp::update(){
@@ -179,9 +182,7 @@ void ofApp::update(){
 			HashtagTextHolder.setText(triggeredLandMark.hashtag);
 			HashtagDropShadow.setText(triggeredLandMark.hashtag);
 
-			videofrompipeline.append("MediaContainer/").append(Landmark_current).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
-			currentVideoContainer.loadMovie(videofrompipeline);
-			videoCountPipeline++;
+			playNextMovie(Landmark_current);
 			landmark_windowlive = true;
 		}
 
@@ -190,9 +191,7 @@ void ofApp::update(){
 			videofrompipeline.clear();
 			generic_count = rand() % 5;
 			string LandmarkinQueue = landmarks[generic_count];
-			videofrompipeline.append("MediaContainer/").append(LandmarkinQueue).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
-			currentVideoContainer.loadMovie(videofrompipeline);
-			videoCountPipeline ++;
+			playNextMovie(Landmark_current);
 			TextHolder = videofrompipeline;
 			// Setting text, font and dropshadow
 			HookText = hooks_base_import.at(hookindex).text;
@@ -245,8 +244,7 @@ void ofApp::update(){
 		if ( Timer_VideoWindow >= Time_PerVideo )
 		{
 			videofrompipeline.clear();
-			videofrompipeline.append("MediaContainer/").append(landmarks[generic_count]).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
-			currentVideoContainer.loadMovie(videofrompipeline);
+			playNextMovie(landmarks[generic_count]);
 			videoCountPipeline = rand() % 3;
 			TextHolder = videofrompipeline;
 
@@ -300,11 +298,7 @@ void ofApp::update(){
 				// Set the path for video to be played based on the current landmark in queue and the video count of the mediacontainer folder
 				videofrompipeline.clear();
 				TriggeredLandmark queuedLandmark = Landmarks_queue.front();
-				videofrompipeline.append("MediaContainer/").append(queuedLandmark.name).append("/video").append(to_string(videoCountPipeline)).append(".mp4");
-				// Load movie in main video container
-				currentVideoContainer.loadMovie(videofrompipeline);
-				// Increment video count
-				videoCountPipeline ++;
+				playNextMovie(queuedLandmark.name);
 				// Reset video clock
 				ClockStart_VideoWindow = std::clock();
 			
@@ -392,8 +386,8 @@ void ofApp::update(){
 	HookDropShadow.setText(HookText);
 
 	//Wrapping text to a defined width of pixels
-	wrap = HookTextHolder.wrapTextX(1500);
-	wrapdropshadow = HookDropShadow.wrapTextX(1500);
+	wrap = HookTextHolder.wrapTextX(0.8 * Global::VIDEO_RESOLUTION_X);
+	wrapdropshadow = HookDropShadow.wrapTextX(0.8 * Global::VIDEO_RESOLUTION_X);
 		
 	// Modifying color on each word in hook
 	if (hookcycle % 2 == 0)
@@ -433,20 +427,20 @@ void ofApp::draw(){
 
 	// Drawing video frame
 	ofSetColor(255,255,255);
-	currentVideoContainer.draw(0,0, 1920, 1080);
+	currentVideoContainer.draw(0,0, Global::VIDEO_RESOLUTION_X, Global::VIDEO_RESOLUTION_Y);
 
 	// Video path test string : uncomment for testing purposes
 	//TempVideoPath.drawString(TextHolder, 50, 50);
 
 	// Drawing Hook
-	HookDropShadow.drawCenter(1920 / 2 + 5, 1080 / 2 - 100 + 5);
-	HookTextHolder.drawCenter(1920 / 2, 1080 / 2 - 100);
+	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + 5, Global::VIDEO_RESOLUTION_Y / 2 - 100 + 5);
+	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2 - 100);
 
 	// Drawing hashtag (but only if we are showing a hook)
 	if (!HookText.empty())
 	{
-		HashtagDropShadow.drawCenter(1920 / 2 + 5, 10 + 5);
-		HashtagTextHolder.drawCenter(1920 / 2, 10);
+		HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + 5, 10 + 5);
+		HashtagTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, 10);
 	}
 	
 	
