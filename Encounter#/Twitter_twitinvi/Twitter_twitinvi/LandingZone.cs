@@ -15,15 +15,19 @@ namespace Twitter_twitinvi
 
         public char DayOrNight()
         {
-            int time = Convert.ToInt32(string.Format("{0:HH}", DateTime.Now));
-
-            if (time < 20)
+            if (DateTime.Now.Hour < 20)
                 return 'D';
             else
                 return 'N';
         }
 
-        
 
+        public char MorningOrAfternoon()
+        {
+            if (DateTime.Now.Hour < 12)
+                return 'M';
+            else
+                return 'A';
+        }
     }
 }

@@ -23,9 +23,9 @@ namespace Twitter_twitinvi
             // Initialize Name, Categories, thematic_metatags and hashtag_trackers
 
             this.Name = values[0].ToString();
-            this.Categories = Program.splitstring(values[1].ToString());
-            this.Thematic_metatags = Program.splitstring(values[2].ToString());
-            this.Hashtag_trackers = Program.splitstring(values[3].ToString());
+            this.Categories = Program.splitstring(values[1].ToString(), ',');
+            this.Thematic_metatags = Program.splitstring(values[2].ToString(), ' ');
+            this.Hashtag_trackers = Program.splitstring(values[3].ToString(), ' ');
                         
         }
 

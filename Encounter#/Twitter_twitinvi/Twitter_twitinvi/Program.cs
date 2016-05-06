@@ -141,7 +141,7 @@ namespace Twitter_twitinvi
             // BLOCK 5: Landing zone and context aware parameters
             LandingZone landingzone = new LandingZone();
 
-            char DayorNight = landingzone.DayOrNight();
+            char MorningOrAfternoon = landingzone.MorningOrAfternoon();
             char Weather = Sensors.WeatherSense.SunnyOrCloudy(sensor_account);
 
 
@@ -198,8 +198,8 @@ namespace Twitter_twitinvi
                 // Searching through tweet to find relevant landmark
                 MatchedLandmark detectedlandmark = Find_tweeted_landmark(Landmarks, tweet);
 
-                // Getting the hook categories that the landmark satisfies
-                string[] relevantHookCategories = detectedlandmark.Landmark.Categories;
+                // We ignore the landmark-specific categories, hooks are categorized by landmark + wildcard humor category.
+                string[] relevantHookCategories = new string[] { detectedlandmark.Landmark.Name, "humor" }; // detectedlandmark.Landmark.Categories;
 
                 // Writing detected landmark to text file interface between here and OF
                 using (StreamWriter writer = new StreamWriter(RootDirectory + @"Package\Config_Interfaces\TriggeredLandmark.txt", false))
@@ -207,8 +207,9 @@ namespace Twitter_twitinvi
                     writer.Write("{0}\r\n{1}", detectedlandmark.Landmark.Name, detectedlandmark.Hashtag);
                 }
 
-                // Selecting hooks that belong to the relevant categories corresponding to the landmark
                 List<Hook> RelevantHooks = new List<Hook>();
+
+                // Selecting hooks that belong to the relevant categories corresponding to the landmark - Obsolete
                 foreach (string category in relevantHookCategories)
                 {
                     RelevantHooks.AddRange((from item in Hooks
@@ -217,21 +218,22 @@ namespace Twitter_twitinvi
                 }
 
                 // Storing current sensor values
-                DayorNight = landingzone.DayOrNight();
+                MorningOrAfternoon = landingzone.MorningOrAfternoon();
                 Weather = Sensors.WeatherSense.SunnyOrCloudy(sensor_account);
 
                 // Further filtering hooks based on sensor values
-                List<Hook> RelevantHooksSensorFilters = new List<Hook>();
-                RelevantHooksSensorFilters.AddRange(from hook in RelevantHooks
-                                                    where hook.timeofday.Contains(DayorNight) && hook.weather.Contains(Weather)
-                                                    select hook);
+                RelevantHooks = (from hook in RelevantHooks
+                                                    where 
+                                                        (hook.timeofday.Contains(MorningOrAfternoon) || String.IsNullOrEmpty(hook.timeofday)) && 
+                                                        (hook.weather.Contains(Weather) || String.IsNullOrEmpty(hook.weather))
+                                 select hook).ToList();
 
                 // Writing the selected hooks to an XML to be read in by OF
                 using (XmlWriter writer = XmlWriter.Create(RootDirectory + @"of_v0.8.4_vs_release\apps\myApps\OpenEncounters\bin\data\Hooks.xml"))
                 {
                     writer.WriteStartDocument();
                     writer.WriteStartElement("Filtered_hooks");
-                    foreach (Hook item in RelevantHooksSensorFilters)
+                    foreach (var item in RelevantHooks)
                     {
                         writer.WriteStartElement("Hook");
                         writer.WriteElementString("text", item.text);
@@ -271,9 +273,9 @@ namespace Twitter_twitinvi
         }
 
         // Method for comma seperated value extration
-        static public string[] splitstring(string csv)
+        static public string[] splitstring(string csv, char separator)
         {
-            string[] values = csv.Split(',');
+            string[] values = csv.Split(separator);
             for (int i = 0; i < values.Length; i++)
             {
                 values[i] = values[i].Trim();
