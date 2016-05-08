@@ -101,7 +101,7 @@ void ofApp::setup() {
 	Time_LandmarkWindow = 120;
 	Time_PerVideo = 30;
 	Time_Transition_Video = 8; 
-	Time_PerHook = 10;
+	Time_PerHook = 2;
 	Time_PerAnnouncement = 10;
 
 	firstcycle = true;
@@ -238,8 +238,6 @@ void ofApp::update(){
 				HookTextHolder.init(hooks_base_import.at(hookindex).hookfont, fontsize);
 				HookDropShadow.init(hooks_base_import.at(hookindex).hookfont, fontsize);
 				HookText = hooks_base_import.at(hookindex).text;
-				
-				//HookTextHolder.loadFont(hooks_base_import.at(hookindex).hookfont, 32);
 				hookindex++;
 
 			}
@@ -449,10 +447,10 @@ void ofApp::draw(){
 	//TempVideoPath.drawString(TextHolder, 50, 50);
 
 	// Drawing Hook
-	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, Global::VIDEO_RESOLUTION_Y / 2 - 100 + Global::TEXT_SHADOW_OFFSET);
-	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2 - 100);
+	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, Global::VIDEO_RESOLUTION_Y / 2 + Global::TEXT_SHADOW_OFFSET);
+	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2);
 
-	// Drawing hashtag (but only if we are showing a hook)
+	// Drawing "up next" hashtag (only contains text near end of current landmark video)
 	HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, 10 + Global::TEXT_SHADOW_OFFSET);
 	HashtagTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, 10);
 }
