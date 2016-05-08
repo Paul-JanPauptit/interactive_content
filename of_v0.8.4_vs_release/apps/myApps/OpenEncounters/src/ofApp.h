@@ -13,11 +13,15 @@
 
 #include "ParsingXML.h"
 
-static class Global {
+class Global {
 public:
 	static const int VIDEO_RESOLUTION_X = 640;
 	static const int VIDEO_RESOLUTION_Y = 384;
 	static const int FONT_SIZE = 40;
+	static const int TEXT_SHADOW_OFFSET = 2;
+
+
+	static const bool SUPPORTS_TRANSITION_MOVIES = false;
 };
 
 struct TriggeredLandmark
@@ -105,6 +109,8 @@ class ofApp : public ofBaseApp{
 		string Landmark_previous;
 		string Landmark_current;
 
+		int GetRandomLandmarkIndex();
+
 		// Hashtag
 		string Hashtag_current;
 
@@ -160,11 +166,11 @@ class ofApp : public ofBaseApp{
 		queue <TriggeredLandmark> Landmarks_queue;
 
 		bool firstcycle;
-		bool transition_movie_loaded;
+		bool transition_initialized;
 		bool landmark_windowlive;
 		bool nolandmarkwindowlive;
 
-		string landmarks[6];
+		std::vector<std::string> landmarks;
 
 		ofTrueTypeFont TempVideoPath;
 		string TextHolder;
@@ -180,7 +186,7 @@ class ofApp : public ofBaseApp{
 		int fontsize;
 		int wrapdropshadow;
 				
-		int generic_count;
+		int landmark_index;
 
 		// Filesystem
 

@@ -91,8 +91,8 @@ void ofApp::setup() {
 
 	// MODULE: PIPELINE VARIABLES AND THREADS
 
-	videoCountPipeline = 0;
-	generic_count = 0;
+	videoCountPipeline = -1;
+	landmark_index = 0;
 	hookindex = 0;
 	hookcycle = 0;
 
@@ -106,14 +106,16 @@ void ofApp::setup() {
 	firstcycle = true;
 	landmark_windowlive = false;
 	nolandmarkwindowlive = false;
-	transition_movie_loaded = false;
+	transition_initialized = false;
 
-	landmarks[0]= "Volkshotel";
-	landmarks[1]= "Oba";
-	landmarks[2]= "Artis";
-	landmarks[3]= "Wibautstraat";
-	landmarks[4]= "Oosterpark";
-	landmarks[5]= "Sciencepark";
+	// Create an array of landmark folders to fallback on when no twitter input is received. 
+	string path = rootdirectory;
+	path.append("of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\MediaContainer\\");
+	ofDirectory dir = ofDirectory(path);
+	dir.allowExt("");
+	int size = dir.listDir();
+	for (int i = 0; i < size; i++)
+		landmarks.push_back(dir.getName(i));
 
 	// Testing the video triggered by diplaying its path, can be set on in the draw function
 	TempVideoPath.loadFont("COPRGTB.ttf", 32);
@@ -123,6 +125,9 @@ void ofApp::setup() {
 
 	fontsize = Global::FONT_SIZE;
 	// ofToggleFullscreen();
+
+	// Background color (only visible if no movie is playing)
+	ofBackground(50, 50, 58, 255);
 }
 
 
@@ -145,6 +150,10 @@ void ofApp::playNextMovie(string landmark)
 	int count = dir.size();
 	if (videoCountPipeline >= count)
 		videoCountPipeline = 0;
+
+	// Initially, pick a random video
+	if (videoCountPipeline = -1)
+		videoCountPipeline = rand() % count;
 
 	string filename = dir.getPath(videoCountPipeline);
 	currentVideoContainer.loadMovie(filename);
@@ -189,8 +198,8 @@ void ofApp::update(){
 		if (Landmark_current.size() == NULL)
 		{
 			videofrompipeline.clear();
-			generic_count = rand() % 5;
-			string LandmarkinQueue = landmarks[generic_count];
+			landmark_index = GetRandomLandmarkIndex();
+			string LandmarkinQueue = landmarks[landmark_index];
 			playNextMovie(Landmark_current);
 			TextHolder = videofrompipeline;
 			// Setting text, font and dropshadow
@@ -209,7 +218,7 @@ void ofApp::update(){
 	Timer_Hook = ( std::clock() - ClockStart_Hook ) / (double) CLOCKS_PER_SEC;
 
 	// CONDITIONAL_MODULE 2: NO LANDMARK TRIGGERED
-	if (Landmark_current.size() == NULL || Landmarks_queue.size() == 0 || nolandmarkwindowlive == true)
+	if (!transition_initialized && (Landmark_current.size() == NULL || Landmarks_queue.size() == 0 || nolandmarkwindowlive == true))
 	{
 		nolandmarkwindowlive = true;
 
@@ -244,28 +253,26 @@ void ofApp::update(){
 		if ( Timer_VideoWindow >= Time_PerVideo )
 		{
 			videofrompipeline.clear();
-			playNextMovie(landmarks[generic_count]);
-			videoCountPipeline = rand() % 3;
+			landmark_index = GetRandomLandmarkIndex();
+			playNextMovie(landmarks[landmark_index]);
 			TextHolder = videofrompipeline;
 
 			// HashtagTextHolder.init("", fontsize);
 
 			// Reset video clock
 			ClockStart_VideoWindow = std::clock();
-			generic_count = rand() % 5;
-
 		}
 
 		if (videoCountPipeline == numberOfvideosinpipeline)
 		{
 			videoCountPipeline = 0;
-			generic_count = 0;
+			landmark_index = 0;
 		}
 
 	}
 
 	// CONDITIONAL_MODULE 3: LANDMARK TRIGGERED
-	if (Landmark_current.size() != NULL && nolandmarkwindowlive != true)
+	if (!transition_initialized && (Landmark_current.size() != NULL && nolandmarkwindowlive != true))
 	{
 		// LANDMARK WINDOW LIVE
 		if (Timer_LandmarkWindow <= Time_LandmarkWindow)
@@ -312,44 +319,58 @@ void ofApp::update(){
 		}
 	}
 
-	// LANDMARK WINDOW TIMED OUT
+	// LANDMARK WINDOW TIMED OUT - transition and landmark cleanup
 	if (Timer_LandmarkWindow >= Time_LandmarkWindow)
 	{
-		// TRANSITION ANIMATIONS
 
-		// No need for hooks
-		HookText = "";
-
-		// Pop the landmark that has been executed out of the queue
-
-		if (transition_movie_loaded == false)
+		if (transition_initialized == false)
 		{
-			if(nolandmarkwindowlive == true)
-			{
-				currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//general_transitionanimation.mov");
-			}	
+			// Initialize next landmark: either from queue or random
+			string queuedLandmark;
+			if (Landmarks_queue.size() > 0)
+				queuedLandmark = Landmarks_queue.front().name;
+			else
+				queuedLandmark = landmarks[GetRandomLandmarkIndex()];
 
-			else 
+			if (Global::SUPPORTS_TRANSITION_MOVIES)
 			{
-				string queuedLandmark = Landmarks_queue.front().name;
-				currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + queuedLandmark + "_transitionanimation.mov");
-			}	
+				// No need for hooks
+				HookText = "";
+
+
+				// TRANSITION ANIMATIONS
+				if (nolandmarkwindowlive == true)
+				{
+					currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//general_transitionanimation.mov");
+				}	
+
+				else 
+				{
+					currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + queuedLandmark + "_transitionanimation.mov");
+				}
+			}
+			else
+			{
+				// Simple transition - Blank screen with name of next landmark
+				currentVideoContainer.stop();
+				//currentVideoContainer.close();
+				HookText = queuedLandmark;
+			}
 
 			ClockStart_TransitionMapVideo = std::clock();
-			transition_movie_loaded = true;
+			transition_initialized = true;
 			Timer_TransitionMapVideo = ( std::clock() - ClockStart_TransitionMapVideo ) / (double) CLOCKS_PER_SEC;
-		}   
+		}
 
-		if (Timer_TransitionMapVideo <= Time_Transition_Video)// Transition map is sequence is not over)
+		if (Timer_TransitionMapVideo <= Time_Transition_Video) // Transition map is sequence is not over
 		{
 			// Keep updating the Transition movie				
 		}
-
 		else if (Timer_TransitionMapVideo >= Time_Transition_Video)
 		{
 			// ENDING OF THE LANDMARK WINDOW
 			ClockStart_LandmarkWindow = std::clock();
-			transition_movie_loaded = false;
+			transition_initialized = false;
 			if(Landmarks_queue.size() != 0 && nolandmarkwindowlive != true)
 			{
 				Landmarks_queue.pop();
@@ -361,6 +382,7 @@ void ofApp::update(){
 			hookindex = 0;
 			hookcycle = 0;
 
+			HookText.clear();
 			nolandmarkwindowlive = false;
 		}
 
@@ -388,33 +410,35 @@ void ofApp::update(){
 	//Wrapping text to a defined width of pixels
 	wrap = HookTextHolder.wrapTextX(0.8 * Global::VIDEO_RESOLUTION_X);
 	wrapdropshadow = HookDropShadow.wrapTextX(0.8 * Global::VIDEO_RESOLUTION_X);
-		
+	
+	HookTextHolder.setColor(255, 255, 153, 255);
+	HookDropShadow.setColor(8, 8, 8, 255);
+
 	// Modifying color on each word in hook
-	if (hookcycle % 2 == 0)
-	{
-		for(int i = 0; i < HookTextHolder.words.size(); i++)
-		{
-			if(i % 2 == 0)
-			{
-				HookTextHolder.words.at(i).color.r = 255;
-				HookTextHolder.words.at(i).color.g = 255;
-				HookTextHolder.words.at(i).color.b = 153;
-			}
-		}
-	}
-	if (hookcycle % 2 == 0)
-	{
-		for(int i = 0; i < HookDropShadow.words.size(); i++)
-		{
-			if(i % 2 == 0)
-			{
-				HookDropShadow.words.at(i).color.r = 8;
-				HookDropShadow.words.at(i).color.g = 8;
-				HookDropShadow.words.at(i).color.b = 8;
-				//HookDropShadow.words.at(i).color.a = 0.5;
-			}
-		}
-	}
+	//if (hookcycle % 2 == 0)
+	//{
+	//	for(int i = 0; i < HookTextHolder.words.size(); i++)
+	//	{
+	//		if(i % 2 == 0)
+	//		{
+	//			HookTextHolder.words.at(i).color.r = 255;
+	//			HookTextHolder.words.at(i).color.g = 255;
+	//			HookTextHolder.words.at(i).color.b = 153;
+	//		}
+	//	}
+	//}
+	//if (hookcycle % 2 == 0)
+	//{
+	//	for(int i = 0; i < HookDropShadow.words.size(); i++)
+	//	{
+	//		if(i % 2 == 0)
+	//		{
+	//			HookDropShadow.words.at(i).color.r = 8;
+	//			HookDropShadow.words.at(i).color.g = 8;
+	//			HookDropShadow.words.at(i).color.b = 8;
+	//		}
+	//	}
+	//}
 
 	HashtagTextHolder.setColor(255, 255, 153, 255);
 	HashtagDropShadow.setColor(8, 8, 8, 255);
@@ -425,30 +449,51 @@ void ofApp::update(){
 
 void ofApp::draw(){
 
-	// Drawing video frame
+	// Drawing and advancing video frame
 	ofSetColor(255,255,255);
-	currentVideoContainer.draw(0,0, Global::VIDEO_RESOLUTION_X, Global::VIDEO_RESOLUTION_Y);
+
+	// Drawing and updating  the video frame, unless we are playing a transition without a background movie
+	if (Global::SUPPORTS_TRANSITION_MOVIES || !transition_initialized)
+	{
+		currentVideoContainer.draw(0,0, Global::VIDEO_RESOLUTION_X, Global::VIDEO_RESOLUTION_Y);
+		currentVideoContainer.play();
+	}
 
 	// Video path test string : uncomment for testing purposes
 	//TempVideoPath.drawString(TextHolder, 50, 50);
 
 	// Drawing Hook
-	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + 5, Global::VIDEO_RESOLUTION_Y / 2 - 100 + 5);
+	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, Global::VIDEO_RESOLUTION_Y / 2 - 100 + Global::TEXT_SHADOW_OFFSET);
 	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2 - 100);
 
 	// Drawing hashtag (but only if we are showing a hook)
 	if (!HookText.empty())
 	{
-		HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + 5, 10 + 5);
+		HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, 10 + Global::TEXT_SHADOW_OFFSET);
 		HashtagTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, 10);
 	}
-	
-	
-	// Playing the video frame
-	currentVideoContainer.play();
-
 }
 
+//--------------------------------------------------------------
+int ofApp::GetRandomLandmarkIndex()
+{
+	// Returns a random landmark, different from the current
+	int size = landmarks.size();
+	int index = rand() % (size - 1);
+	int currentIndex = 0;
+	for (int currendex = 0; currentIndex < size; currentIndex++)
+	{
+		if (landmarks[currentIndex] == Landmark_current)
+		{
+			break;
+		}
+	}
+	if (index >= currentIndex)
+	{
+		index++;
+	}
+	return index;
+}
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
