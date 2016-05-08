@@ -108,6 +108,7 @@ class ofApp : public ofBaseApp{
 		
 		string Landmark_previous;
 		string Landmark_current;
+		string Landmark_next;
 
 		int GetRandomLandmarkIndex();
 
@@ -145,6 +146,7 @@ class ofApp : public ofBaseApp{
 		int Time_PerVideo;
 		int Time_Transition_Video; 
 		int Time_PerHook;
+		int Time_PerAnnouncement;
 
 		int N;
 

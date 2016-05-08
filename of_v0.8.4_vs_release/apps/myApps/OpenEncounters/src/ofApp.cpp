@@ -102,6 +102,7 @@ void ofApp::setup() {
 	Time_PerVideo = 30;
 	Time_Transition_Video = 8; 
 	Time_PerHook = 10;
+	Time_PerAnnouncement = 10;
 
 	firstcycle = true;
 	landmark_windowlive = false;
@@ -188,8 +189,6 @@ void ofApp::update(){
 			hookindex++;
 			HashtagTextHolder.init(hook.hookfont, fontsize * 0.8f);
 			HashtagDropShadow.init(hook.hookfont, fontsize * 0.8f);
-			HashtagTextHolder.setText(triggeredLandMark.hashtag);
-			HashtagDropShadow.setText(triggeredLandMark.hashtag);
 
 			playNextMovie(Landmark_current);
 			landmark_windowlive = true;
@@ -257,8 +256,6 @@ void ofApp::update(){
 			playNextMovie(landmarks[landmark_index]);
 			TextHolder = videofrompipeline;
 
-			// HashtagTextHolder.init("", fontsize);
-
 			// Reset video clock
 			ClockStart_VideoWindow = std::clock();
 		}
@@ -308,14 +305,31 @@ void ofApp::update(){
 				playNextMovie(queuedLandmark.name);
 				// Reset video clock
 				ClockStart_VideoWindow = std::clock();
-			
-				HashtagTextHolder.setText(queuedLandmark.hashtag);
-				HashtagDropShadow.setText(queuedLandmark.hashtag);
 
 				// TEST: To check if the right video is being played
 				TextHolder = videofrompipeline;
 			}
 
+		}
+	}
+
+	// LANDMARK WINDOW NEARING END - announce next landmark
+	if (Timer_LandmarkWindow >= Time_LandmarkWindow - Time_PerAnnouncement && !transition_initialized)
+	{
+		if (HashtagTextHolder.rawText.empty())
+		{
+			// Initialize next landmark: either from queue or random
+			string queuedLandmark;
+			if (Landmarks_queue.size() > 0) 
+			{
+				TriggeredLandmark landmark = Landmarks_queue.front();
+				Landmark_next = landmark.name;
+				string announcement = "Up next: " + landmark.hashtag;
+				HashtagTextHolder.setText(announcement);
+				HashtagDropShadow.setText(announcement);
+			}
+			else
+				Landmark_next = landmarks[GetRandomLandmarkIndex()];
 		}
 	}
 
@@ -325,12 +339,7 @@ void ofApp::update(){
 
 		if (transition_initialized == false)
 		{
-			// Initialize next landmark: either from queue or random
-			string queuedLandmark;
-			if (Landmarks_queue.size() > 0)
-				queuedLandmark = Landmarks_queue.front().name;
-			else
-				queuedLandmark = landmarks[GetRandomLandmarkIndex()];
+
 
 			if (Global::SUPPORTS_TRANSITION_MOVIES)
 			{
@@ -346,7 +355,7 @@ void ofApp::update(){
 
 				else 
 				{
-					currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + queuedLandmark + "_transitionanimation.mov");
+					currentVideoContainer.loadMovie("mediacontainer//TransitionAnimations//" + Landmark_next + "_transitionanimation.mov");
 				}
 			}
 			else
@@ -354,8 +363,11 @@ void ofApp::update(){
 				// Simple transition - Blank screen with name of next landmark
 				currentVideoContainer.stop();
 				//currentVideoContainer.close();
-				HookText = queuedLandmark;
+				HookText = Landmark_next;
 			}
+
+			HashtagTextHolder.setText("");
+			HashtagDropShadow.setText("");
 
 			ClockStart_TransitionMapVideo = std::clock();
 			transition_initialized = true;
@@ -414,32 +426,6 @@ void ofApp::update(){
 	HookTextHolder.setColor(255, 255, 153, 255);
 	HookDropShadow.setColor(8, 8, 8, 255);
 
-	// Modifying color on each word in hook
-	//if (hookcycle % 2 == 0)
-	//{
-	//	for(int i = 0; i < HookTextHolder.words.size(); i++)
-	//	{
-	//		if(i % 2 == 0)
-	//		{
-	//			HookTextHolder.words.at(i).color.r = 255;
-	//			HookTextHolder.words.at(i).color.g = 255;
-	//			HookTextHolder.words.at(i).color.b = 153;
-	//		}
-	//	}
-	//}
-	//if (hookcycle % 2 == 0)
-	//{
-	//	for(int i = 0; i < HookDropShadow.words.size(); i++)
-	//	{
-	//		if(i % 2 == 0)
-	//		{
-	//			HookDropShadow.words.at(i).color.r = 8;
-	//			HookDropShadow.words.at(i).color.g = 8;
-	//			HookDropShadow.words.at(i).color.b = 8;
-	//		}
-	//	}
-	//}
-
 	HashtagTextHolder.setColor(255, 255, 153, 255);
 	HashtagDropShadow.setColor(8, 8, 8, 255);
 
@@ -467,11 +453,8 @@ void ofApp::draw(){
 	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2 - 100);
 
 	// Drawing hashtag (but only if we are showing a hook)
-	if (!HookText.empty())
-	{
-		HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, 10 + Global::TEXT_SHADOW_OFFSET);
-		HashtagTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, 10);
-	}
+	HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, 10 + Global::TEXT_SHADOW_OFFSET);
+	HashtagTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, 10);
 }
 
 //--------------------------------------------------------------
