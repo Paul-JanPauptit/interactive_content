@@ -119,6 +119,7 @@ class ofApp : public ofBaseApp{
 		// Videos 
 		ofVideoPlayer currentVideoContainer;
 		int videoCountPipeline;
+		int videoCountPipeline2; // Separate counter for wildcard category "humor"
 		string videofrompipeline;
 		map<string, ofDirectory> videoDirs;
 		

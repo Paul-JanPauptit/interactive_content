@@ -92,6 +92,7 @@ void ofApp::setup() {
 	// MODULE: PIPELINE VARIABLES AND THREADS
 
 	videoCountPipeline = -1;
+	videoCountPipeline2 = -1;
 	landmark_index = 0;
 	hookindex = 0;
 	hookcycle = 0;
@@ -134,6 +135,15 @@ void ofApp::setup() {
 
 void ofApp::playNextMovie(string landmark)
 {
+	int* counter = &videoCountPipeline;
+
+	// We regularly play from the humor category.
+	if (rand() % 4 == 3)
+	{
+		landmark = "humor";
+		counter = &videoCountPipeline2;
+	}
+
 	string path = rootdirectory;
 	path.append("of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\MediaContainer\\").append(landmark);
 
@@ -154,16 +164,16 @@ void ofApp::playNextMovie(string landmark)
 	if (count == 0)
 		return;
 
-	if (videoCountPipeline >= count)
-		videoCountPipeline = 0;
+	if (*counter >= count)
+		*counter = 0;
 
 	// Initially, pick a random video
-	if (videoCountPipeline = -1)
-		videoCountPipeline = rand() % count;
+	if (*counter == -1)
+		*counter = rand() % count;
 
-	string filename = dir.getPath(videoCountPipeline);
+	string filename = dir.getPath(*counter);
 	currentVideoContainer.loadMovie(filename);
-	videoCountPipeline++;
+	(*counter)++;
 }
 
 //--------------------------------------------------------------
