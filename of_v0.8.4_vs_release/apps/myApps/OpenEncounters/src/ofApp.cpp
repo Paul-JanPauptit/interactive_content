@@ -101,7 +101,7 @@ void ofApp::setup() {
 	Time_LandmarkWindow = 120;
 	Time_PerVideo = 30;
 	Time_Transition_Video = 8; 
-	Time_PerHook = 2;
+	Time_PerHook = 10;
 	Time_PerAnnouncement = 10;
 
 	firstcycle = true;
@@ -398,7 +398,6 @@ void ofApp::update(){
 
 	}
 
-	// CONDITIONAL_MODULE 4: NEW LANDMARK IN PIPELINE
 	if (firstcycle != true){
 		if(Landmark_current != Landmark_previous)
 		{			
@@ -447,8 +446,8 @@ void ofApp::draw(){
 	//TempVideoPath.drawString(TextHolder, 50, 50);
 
 	// Drawing Hook
-	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, Global::VIDEO_RESOLUTION_Y / 2 + Global::TEXT_SHADOW_OFFSET);
-	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2);
+	HookDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, Global::VIDEO_RESOLUTION_Y / 2 + Global::TEXT_SHADOW_OFFSET, true);
+	HookTextHolder.drawCenter(Global::VIDEO_RESOLUTION_X / 2, Global::VIDEO_RESOLUTION_Y / 2, true);
 
 	// Drawing "up next" hashtag (only contains text near end of current landmark video)
 	HashtagDropShadow.drawCenter(Global::VIDEO_RESOLUTION_X / 2 + Global::TEXT_SHADOW_OFFSET, 10 + Global::TEXT_SHADOW_OFFSET);
