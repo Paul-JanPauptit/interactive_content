@@ -174,11 +174,9 @@ vector<Hook> GetData(string filename)
 
         if ((bool)varResult == FALSE)
         {
-            //printf("*** Error:failed to load XML file. ***\n");
-            MessageBox(0,_T("Error: failed to load XML file. Check the file name."), \
-                _T("Load XML file"), MB_OK |MB_ICONWARNING);
+            printf("*** Error:failed to load Hooks XML file... ***\n");
 			return Hookvector;
-        }
+		}
 
         shared_ptr<XmlNode> batteryNode = GetNodeCollection(docPtr, _T("Filtered_hooks"));
 

@@ -156,7 +156,7 @@ class ofApp : public ofBaseApp{
 		vector<ofApp::HookFromEncouter> hooks_base_import;
 		vector<ofApp::HookFromEncouter> hooks_dynamic_import;
 				
-		vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename);
+		vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename, string backupFilename = "");
 	
 		std::queue<std::vector<ofApp::HookFromEncouter>> Hooks_queue;
 		int hookindex;
@@ -194,6 +194,8 @@ class ofApp : public ofBaseApp{
 		// Filesystem
 
 		string rootdirectory;
+		string hooks_filename;
+		string hooks_base_filename;
 		
 
 };

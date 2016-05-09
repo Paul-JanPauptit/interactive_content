@@ -50,15 +50,21 @@ ofApp::HookFromEncouter::HookFromEncouter()
 }
 
 // Gets hooks by parsing xml file filename, reading in node values and returning a vector of HookFromEncounter objects
-vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename)
+vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename, string backupFilename)
 {
 	vector<HookFromEncouter> hooks_dynamic_import;
 
 	string text;
 	string font;
 
-	//Getting data from XML parser
+	//Getting data from XML parser. If the XML cannot be read it might be locked by the twitter integration, fall back onto backup hooks if that happens.
 	vector<Hook> hooksfromxml = GetData(filename);
+	if (hooksfromxml.size() == 0 && !backupFilename.empty())
+	{
+		printf("Falling back onto %s", backupFilename.c_str());
+		hooksfromxml = GetData(backupFilename);
+	}
+
 	HookFromEncouter hookTemp;
 	
 	// Object conversion
@@ -88,6 +94,8 @@ vector<ofApp::HookFromEncouter> ofApp::GetHooks(string filename)
 void ofApp::setup() {
 
 	rootdirectory = ofFilePath::getCurrentExeDir() + "..\\..\\..\\..\\..\\";
+	hooks_filename = rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\Hooks.xml";
+	hooks_base_filename = rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\BaseHooks.xml";
 
 	// MODULE: PIPELINE VARIABLES AND THREADS
 
@@ -123,7 +131,7 @@ void ofApp::setup() {
 	TempVideoPath.loadFont("COPRGTB.ttf", 32);
 
 	// Getting all hooks from base xml file that contains all the hooks
-	hooks_base_import = ofApp::GetHooks( rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\BaseHooks.xml");
+	hooks_base_import = ofApp::GetHooks(hooks_base_filename);
 
 	fontsize = Global::FONT_SIZE;
 	// ofToggleFullscreen();
@@ -194,16 +202,16 @@ void ofApp::update(){
 		{
 			// QUEUE NEXT BLOCK : LANDMARK AND HOOK
 			Landmarks_queue.push(triggeredLandMark);
-			hooks_dynamic_import = ofApp::GetHooks(rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\Hooks.xml");
+			hooks_dynamic_import = ofApp::GetHooks(hooks_filename, hooks_base_filename);
 			Hooks_queue.push(hooks_dynamic_import);
 			ofApp::HookFromEncouter hook =  Hooks_queue.front().at(hookindex);
 			HookText = hook.text;
 			// Setting text, font and dropshadow
 			HookTextHolder.init(hook.hookfont, fontsize);
 			HookDropShadow.init(hook.hookfont, fontsize);
-			hookindex++;
 			HashtagTextHolder.init(hook.hookfont, fontsize * 0.8f);
 			HashtagDropShadow.init(hook.hookfont, fontsize * 0.8f);
+			hookindex++;
 
 			playNextMovie(Landmark_current);
 			landmark_windowlive = true;
@@ -217,9 +225,12 @@ void ofApp::update(){
 			playNextMovie(Landmark_current);
 			TextHolder = videofrompipeline;
 			// Setting text, font and dropshadow
-			HookText = hooks_base_import.at(hookindex).text;
-			HookTextHolder.init(hooks_base_import.at(hookindex).hookfont, fontsize);
-			HookDropShadow.init(hooks_base_import.at(hookindex).hookfont, fontsize);
+			ofApp::HookFromEncouter hook = hooks_base_import.at(hookindex);
+			HookText = hook.text;
+			HookTextHolder.init(hook.hookfont, fontsize);
+			HookDropShadow.init(hook.hookfont, fontsize);
+			HashtagTextHolder.init(hook.hookfont, fontsize * 0.8f);
+			HashtagDropShadow.init(hook.hookfont, fontsize * 0.8f);
 			hookindex++;
 			landmark_windowlive = true;
 		}
@@ -417,7 +428,7 @@ void ofApp::update(){
 		if(Landmark_current != Landmark_previous)
 		{			
 			Landmarks_queue.push(triggeredLandMark);
-			hooks_dynamic_import = ofApp::GetHooks(rootdirectory + "of_v0.8.4_vs_release\\apps\\myApps\\OpenEncounters\\bin\\data\\Hooks.xml");
+			hooks_dynamic_import = ofApp::GetHooks(hooks_filename, hooks_base_filename);
 			Hooks_queue.push(hooks_dynamic_import);
 		}
 	}
@@ -490,8 +501,12 @@ int ofApp::GetRandomLandmarkIndex()
 	return index;
 }
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
 
+void ofApp::keyPressed(int key){
+	//if (key == OF_KEY_LEFT)
+	//	hookindex--;
+	//else if (key == OF_KEY_RIGHT)
+	//	hookindex++;
 }
 
 //--------------------------------------------------------------
