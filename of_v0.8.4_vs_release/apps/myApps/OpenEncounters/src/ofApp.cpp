@@ -149,6 +149,11 @@ void ofApp::playNextMovie(string landmark)
 		dir = videoDirs[path];
 
 	int count = dir.size();
+
+	// Empty folder, we have nothing to play
+	if (count == 0)
+		return;
+
 	if (videoCountPipeline >= count)
 		videoCountPipeline = 0;
 
@@ -198,7 +203,7 @@ void ofApp::update(){
 		{
 			videofrompipeline.clear();
 			landmark_index = GetRandomLandmarkIndex();
-			string LandmarkinQueue = landmarks[landmark_index];
+			Landmark_current = landmarks[landmark_index];
 			playNextMovie(Landmark_current);
 			TextHolder = videofrompipeline;
 			// Setting text, font and dropshadow
