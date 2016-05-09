@@ -7,10 +7,10 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ofxTextBlock.cpp">
+    <ClCompile Include="src\ParsingXML.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\ParsingXML.cpp">
+    <ClCompile Include="src\ofxTextBlock.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,10 +23,10 @@
     <ClInclude Include="src\ofApp.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="ofxTextBlock.h">
+    <ClInclude Include="src\ParsingXML.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\ParsingXML.h">
+    <ClInclude Include="src\ofxTextBlock.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

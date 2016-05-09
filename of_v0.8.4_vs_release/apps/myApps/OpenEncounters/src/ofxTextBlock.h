@@ -73,7 +73,7 @@ class ofxTextBlock
         void    draw(float x, float y);                    //Draws left align.
         void    drawLeft(float x, float y);
         void    drawRight(float x, float y);
-        void    drawCenter(float x, float y);
+        void    drawCenter(float x, float y, bool centerVertically = false);
         void    drawJustified(float x, float y, float boxWidth);
 
 

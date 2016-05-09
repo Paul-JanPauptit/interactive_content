@@ -92,21 +92,28 @@ void ofxTextBlock::drawLeft(float x, float y){
     }
 }
 
-void ofxTextBlock::drawCenter(float x, float y){
+void ofxTextBlock::drawCenter(float x, float y, bool centerVertically){
 
     string  strToDraw;
     int     currentWordID;
     float   drawX;
     float   drawY;
     float   lineWidth;
+	float	offsetY;
 
     float currX = 0;
 
     if (words.size() > 0) {
 
+		// Vertical centering offset;
+		if (centerVertically)
+			offsetY = (float) lines.size()  / 2.0f - 0.5f;
+		else
+			offsetY = -1;
+
         for(int l=0;l < lines.size(); l++)
         {
-
+	
             //Get the length of the line.
             lineWidth = 0;
             for(int w=0;w < lines[l].wordsID.size(); w++)
@@ -120,7 +127,7 @@ void ofxTextBlock::drawCenter(float x, float y){
                 currentWordID = lines[l].wordsID[w];
 
                 drawX = -(lineWidth / 2) + currX;
-                drawY = defaultFont.getLineHeight() * (l + 1);
+                drawY = defaultFont.getLineHeight() * (l - offsetY);
 
                 ofSetColor(words[currentWordID].color.r, words[currentWordID].color.g, words[currentWordID].color.b, words[currentWordID].color.a);
 

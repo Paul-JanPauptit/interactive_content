@@ -90,16 +90,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ofxTextBlock.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\ofxTextBlock.cpp" />
     <ClCompile Include="src\ParsingXML.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ofxTextBlock.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\ofxTextBlock.h" />
     <ClInclude Include="src\ParsingXML.h" />
   </ItemGroup>
   <ItemGroup>
