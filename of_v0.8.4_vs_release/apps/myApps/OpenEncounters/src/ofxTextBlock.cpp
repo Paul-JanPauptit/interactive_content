@@ -34,6 +34,7 @@ ofxTextBlock::~ofxTextBlock()
 void ofxTextBlock::init(string fontLocation, float fontSize){
 
     defaultFont.loadFont(fontLocation, fontSize, true, true);
+	defaultFont.setEncoding(OF_ENCODING_ISO_8859_15);
 
     //Set up the blank space word
     blankSpaceWord.rawWord = " ";
