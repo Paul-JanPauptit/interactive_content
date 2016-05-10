@@ -414,7 +414,6 @@ void ofApp::update(){
 			}				
 
 			//Resetting various counts
-			videoCountPipeline = 0;
 			hookindex = 0;
 			hookcycle = 0;
 
